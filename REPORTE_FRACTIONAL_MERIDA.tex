@@ -44,7 +44,11 @@
 \tcbuselibrary{skins}
 
 % Enlaces e hipervínculos
-\usepackage[hidelinks,colorlinks=true,linkcolor=verdeoscuro,urlcolor=turquesa]{hyperref}
+\usepackage[hidelinks,colorlinks=true,linkcolor=verdeoscuro,urlcolor=turquesa,citecolor=turquesa]{hyperref}
+
+% Bibliografía moderna con biblatex
+\usepackage[style=numeric,sorting=none,backend=biber]{biblatex}
+\addbibresource{referencias_fractional.bib}
 
 % Encabezados y pies de página
 \usepackage{scrlayer-scrpage}
@@ -123,34 +127,53 @@
 % ----------------------------------------------------------------------------
 \begin{titlepage}
     \centering
-    \vspace*{3cm}
+    \vspace*{2cm}
     
-    {\Huge\bfseries\color{verdeoscuro} PROYECTO DE COMERCIALIZACIÓN\\[0.5cm]}
+    {\Huge\bfseries\color{verdeoscuro} PROYECTO DE\\[0.3cm] COMERCIALIZACIÓN}
+    
+    \vspace{0.8cm}
+    
     {\LARGE\color{turquesa} Propiedad Fraccional\\[0.3cm]}
     {\Large Mérida, Yucatán}
     
-    \vspace{2cm}
+    \vspace{1.2cm}
     
-    {\Large\color{gris} Análisis de Modelo de Negocio\\[0.2cm]
+    {\large\color{gris} Análisis de Modelo de Negocio\\[0.2cm]
     Sistema de Distribución Equitativa\\[0.2cm]
     Proyecciones Financieras}
     
-    \vfill
+    \vspace{1.5cm}
     
-    \begin{tcolorbox}[colback=grisclaro,colframe=turquesa,width=0.8\textwidth]
+    \begin{tcolorbox}[colback=grisclaro,colframe=turquesa,width=0.75\textwidth,arc=0mm]
         \centering
-        \textbf{\large Información Clave}\\[0.5cm]
+        \textbf{\large Información Clave}\\[0.4cm]
         \begin{tabular}{rl}
-            \textbf{Inversión por Ticket:} & \MXN{900000} \\[0.2cm]
-            \textbf{Número de Tickets:} & 4 copropietarios \\[0.2cm]
-            \textbf{Derechos de Uso:} & 13 semanas/año por ticket \\[0.2cm]
+            \textbf{Inversión por Ticket:} & \MXN{900000} \\[0.15cm]
+            \textbf{Número de Tickets:} & 4 copropietarios \\[0.15cm]
+            \textbf{Derechos de Uso:} & 13 semanas/año por ticket \\[0.15cm]
             \textbf{ROI Proyectado:} & 8.94\% - 12.05\% anual \\
         \end{tabular}
     \end{tcolorbox}
     
-    \vspace{2cm}
+    \vspace{1.2cm}
     
     {\large\color{gris} \today}
+    
+    \vspace{1cm}
+    
+    \begin{center}
+        \color{gris}
+        \textit{Documento preparado para}\\[0.2cm]
+        {\Large\bfseries\color{verdeoscuro} Ing. Daniel Castillo Villalón}\\[0.5cm]
+        
+        \textit{por}\\[0.2cm]
+        {\large\bfseries Sergio Muñoz de Alba Medrano}\\[0.15cm]
+        Consultor Independiente\\[0.3cm]
+        
+        {\small
+        +52 999 200 5550 $\cdot$ smunozam@gmail.com
+        }
+    \end{center}
     
 \end{titlepage}
 
@@ -962,12 +985,19 @@ El proyecto de propiedad fraccional en Mérida representa una \textbf{oportunida
     \item Opciones claras de exit strategy (venta, herencia)
     \item Transparencia total en operación y finanzas
 \end{itemize}
+REFERENCIAS BIBLIOGRÁFICAS
+% ============================================================================
+\newpage
+\section{Referencias}
 
-El modelo está \textbf{listo para implementación} con todos los elementos de análisis, planificación y documentación necesarios para su exitoso desarrollo.
+Las proyecciones financieras, análisis de mercado y marco legal presentados en este documento se fundamentan en las siguientes fuentes:
+
+\printbibliography[heading=none]
 
 % ============================================================================
 % APÉNDICES
 % ============================================================================
+\newpage
 \appendix
 \section{Calendario Detallado de Semanas - Año 2026}
 
