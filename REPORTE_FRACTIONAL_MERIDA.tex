@@ -39,12 +39,12 @@
 \usepackage{multirow}
 \usepackage{array}
 
-% Cajas y destacados
-\usepackage[most]{tcolorbox}
-\tcbuselibrary{skins}
-
 % Enlaces e hipervínculos
 \usepackage[hidelinks,colorlinks=true,linkcolor=verdeoscuro,urlcolor=turquesa,citecolor=turquesa]{hyperref}
+
+% Cajas y destacados (cargar DESPUÉS de hyperref)
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
 
 % Bibliografía moderna con biblatex
 \usepackage[style=numeric,sorting=none,backend=biber]{biblatex}
