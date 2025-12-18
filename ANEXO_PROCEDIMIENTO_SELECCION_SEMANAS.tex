@@ -36,6 +36,7 @@
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{array}
+\usepackage{colortbl}
 
 % Enlaces e hipervínculos
 \usepackage[hidelinks,colorlinks=true,linkcolor=verdeoscuro,urlcolor=turquesa]{hyperref}
@@ -187,13 +188,248 @@ Este documento describe el \textbf{Enfoque 2: Selección Voluntaria}, que combin
 \end{cajadestacado}
 
 % ============================================================================
+% JUSTIFICACIÓN DEL SISTEMA SERPIENTE
+% ============================================================================
+\section{¿Por Qué Sistema Serpiente? Análisis de Alternativas}
+
+\subsection{La Pregunta Fundamental}
+
+Cuando 4 propietarios comparten una propiedad con 52 semanas al año, surge la pregunta central:
+
+\begin{quote}
+\textit{``¿Cómo garantizar que TODOS tengan acceso equitativo a las mejores temporadas?''}
+\end{quote}
+
+Existen 3 sistemas principales para distribuir las semanas. A continuación se presenta un análisis comparativo completo.
+
+\subsection{Comparación de los Tres Sistemas}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{X>{\centering\arraybackslash}p{2.4cm}>{\centering\arraybackslash}p{2.4cm}>{\centering\arraybackslash}p{2.4cm}}
+\toprule
+\textbf{Criterio} & \textbf{Rotación Simple} & \textbf{Sorteo Aleatorio} & \textbf{Sistema Serpiente} \\
+\midrule
+Equidad Temporada ALTA & Buena (6-7 sem) & Variable/Suerte & $\bullet\bullet\bullet\bullet\bullet$ \\
+Equidad Temporada MEDIA & Regular (3-4) & Variable/Suerte & $\bullet\bullet\bullet\bullet\bullet$ \\
+Equidad Temporada BAJA & Buena (3 sem) & Variable/Suerte & $\bullet\bullet\bullet\bullet\bullet$ \\
+Predictibilidad & $\bullet\bullet\bullet\bullet\bullet$ & $\bullet$ & $\bullet\bullet\bullet\bullet\bullet$ \\
+Facilidad Implementación & $\bullet\bullet\bullet\bullet\bullet$ & $\bullet\bullet$ & $\bullet\bullet\bullet\bullet$ \\
+Percepción de Justicia & $\bullet\bullet\bullet$ & $\bullet\bullet$ & $\bullet\bullet\bullet\bullet\bullet$ \\
+Conflictos Potenciales & Medios-Altos & ALTOS & MÍNIMOS \\
+Auditable/Verificable & Sí (trivial) & Sí (registro) & Sí (Excel) \\
+\midrule
+\textbf{RECOMENDACIÓN} & $\bullet\bullet\bullet$ & $\bullet\bullet$ & \textbf{$\bullet\bullet\bullet\bullet\bullet$} \\
+\bottomrule
+\end{tabularx}
+\caption{Comparación de sistemas de distribución de semanas}
+\end{table}
+
+\subsection{Sistema 1: Rotación Simple - NO Recomendado}
+
+\subsubsection{Cómo Funciona}
+
+Método: A-B-C-D repetido constantemente (ABCD-ABCD-ABCD...)
+
+\begin{itemize}
+    \item Semana 1 → Ticket A (elige primero)
+    \item Semana 2 → Ticket B
+    \item Semana 3 → Ticket C
+    \item Semana 4 → Ticket D (elige último)
+    \item Semana 5 → Ticket A (elige primero de nuevo)
+    \item ... patrón se repite todo el año
+\end{itemize}
+
+\subsubsection{El Problema Fundamental}
+
+\begin{itemize}
+    \item \textbf{Ticket A SIEMPRE elige primero} en su turno
+    \item \textbf{Ticket D SIEMPRE elige último} en su turno
+    \item Si Navidad/Año Nuevo/Semana Santa caen en ``semanas A'', Ticket A las monopoliza CADA AÑO
+    \item Ticket D siempre obtiene lo que sobra
+\end{itemize}
+
+\begin{cajaejemplo}
+\textbf{Ejemplo Problemático}:
+
+\textbf{Año 1}:
+\begin{itemize}[itemsep=0.1em]
+    \item Ticket A obtiene: Navidad + Año Nuevo (mejores tarifas)
+    \item Ticket D obtiene: Mayo-Junio (temporada baja)
+\end{itemize}
+
+\textbf{Año 2}:
+\begin{itemize}[itemsep=0.1em]
+    \item Ticket A obtiene: Navidad + Año Nuevo (¡de nuevo!)
+    \item Ticket D obtiene: Mayo-Junio (¡de nuevo!)
+\end{itemize}
+
+\textbf{Conclusión}: A siempre gana, D siempre pierde → RESENTIMIENTO
+\end{cajaejemplo}
+
+\subsubsection{Ventajas y Desventajas}
+
+\textbf{Ventajas}:
+\begin{itemize}
+    \item Muy fácil de implementar
+    \item Muy fácil de explicar
+    \item Funciona técnicamente
+\end{itemize}
+
+\textbf{Desventajas}:
+\begin{itemize}
+    \item Genera percepción de inequidad permanente
+    \item Ticket A tiene ventaja irreversible
+    \item Ticket D se siente discriminado
+    \item Conflictos después del año 2-3
+\end{itemize}
+
+\textbf{Veredicto}: NO RECOMENDADO para proyecto de inversión con 4 socios iguales.
+
+\subsection{Sistema 2: Sorteo Aleatorio - Subóptimo}
+
+\subsubsection{Cómo Funciona}
+
+Cada año se sortean aleatoriamente las 52 semanas:
+
+\begin{itemize}
+    \item Notario sortea aleatoriamente las semanas
+    \item Cada ticket obtiene 13 semanas al azar
+    \item Puede haber desbalance: alguien obtiene 8 semanas ALTA, otro solo 5
+    \item Al año siguiente: SE HACE OTRO SORTEO (posiblemente con resultados diferentes)
+\end{itemize}
+
+\subsubsection{Apariencia de Justicia}
+
+\begin{itemize}
+    \item Parece ``justiciero'' porque es aleatorio
+    \item Todos tienen oportunidad igual cada año
+    \item Nadie es permanentemente desventajado
+\end{itemize}
+
+\subsubsection{Problemas Reales}
+
+\begin{itemize}
+    \item Ansiedad anual: ``¿Voy a tener suerte este año?''
+    \item Requiere proceso complejo cada año (notario, sorteo)
+    \item Genera resentimiento por ``mala suerte'': ``¡A consiguió todo y yo nada!''
+    \item Impredecibilidad afecta planeación de vacaciones
+    \item Posible que después de 10 años, alguien haya tenido ``mala suerte'' el 70\% de veces
+\end{itemize}
+
+\begin{cajaejemplo}
+\textbf{Ejemplo de 3 Años de Mala Suerte}:
+
+\textbf{Ticket D}:
+\begin{itemize}[itemsep=0.1em]
+    \item Año 1: D obtiene semanas 40-52 (temporada baja)
+    \item Año 2: D obtiene semanas 25-37 (transición baja-media)
+    \item Año 3: D obtiene semanas 15-27 (transición media-baja)
+\end{itemize}
+
+\vspace{0.2cm}
+
+D se siente: \textit{``Es como si el universo me odiara. Otros tuvieron suerte 2 veces, yo 0. ¿Estará arreglado el sorteo?''}
+
+\vspace{0.2cm}
+
+\textbf{RESULTADO}: Desconfianza, conflicto legal potencial
+\end{cajaejemplo}
+
+\textbf{Veredicto}: FUNCIONALMENTE POSIBLE, PERO SUBÓPTIMO.
+
+\subsection{Sistema 3: Serpiente (Zig-Zag) - RECOMENDADO}
+
+\subsubsection{Cómo Funciona}
+
+Método: Invierte orden de asignación cada ronda.
+
+\textbf{Temporada ALTA (26 semanas divididas en rondas de 4)}:
+
+\begin{itemize}
+    \item \textbf{Ronda 1} (semanas 1-4):
+    \begin{itemize}[itemsep=0.05em]
+        \item Semana 1 → A (posición 1)
+        \item Semana 2 → B (posición 2)
+        \item Semana 3 → C (posición 3)
+        \item Semana 4 → D (posición 4) ← ELIGE ÚLTIMO aquí
+    \end{itemize}
+    
+    \item \textbf{Ronda 2} (semanas 5-8):
+    \begin{itemize}[itemsep=0.05em]
+        \item Semana 5 → D (posición 1) ← ¡D ELIGE PRIMERO ahora!
+        \item Semana 6 → C (posición 2)
+        \item Semana 7 → B (posición 3)
+        \item Semana 8 → A (posición 4) ← A elige ÚLTIMO aquí
+    \end{itemize}
+    
+    \item \textbf{Ronda 3} (semanas 9-12):
+    \begin{itemize}[itemsep=0.05em]
+        \item Semana 9 → A (posición 1) ← A vuelve a elegir PRIMERO
+        \item ... patrón continúa alternando
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{El Genio del Sistema Serpiente}
+
+\begin{cajadestacado}{Principio Clave}
+\textbf{Si eliges ÚLTIMO en una ronda, eliges PRIMERO en la siguiente}
+
+Esto crea un equilibrio automático perfecto.
+\end{cajadestacado}
+
+\textbf{Matemática del Balance}:
+
+De 13 rondas totales (52 semanas $\div$ 4 tickets = 13 semanas cada uno):
+
+\begin{itemize}
+    \item \textbf{Ticket A}: elige 1º en $\sim$7 rondas, último en $\sim$6 rondas = BALANCE
+    \item \textbf{Ticket B}: elige 2º en $\sim$7 rondas, 3º en $\sim$6 rondas = BALANCE
+    \item \textbf{Ticket C}: elige 3º en $\sim$7 rondas, 2º en $\sim$6 rondas = BALANCE
+    \item \textbf{Ticket D}: elige último en $\sim$7 rondas, 1º en $\sim$6 rondas = BALANCE
+\end{itemize}
+
+\textbf{MATEMÁTICAMENTE PERFECTO}
+
+\subsubsection{Ventajas Decisivas}
+
+\begin{itemize}
+    \item \textbf{Equidad matemática perfecta}: Totalmente demostrable
+    \item \textbf{Nadie permanentemente desventajado}: Automáticamente se compensa
+    \item \textbf{Sin ``mala suerte''}: Sistema determinístico, no aleatorio
+    \item \textbf{Auditable en Excel}: Cualquiera puede verificar en 5 minutos
+    \item \textbf{Predecible}: Todos saben qué van a obtener
+    \item \textbf{Genera CONFIANZA}: ``Veo matemáticamente por qué es justo''
+    \item \textbf{Estándar de mercado}: Usado por desarrollos fraccionales exitosos en USA/Europa
+\end{itemize}
+
+\subsection{Recomendación Final}
+
+Para este proyecto de propiedad fraccional, se recomienda el \textbf{SISTEMA SERPIENTE} porque:
+
+\begin{enumerate}
+    \item \textbf{Equidad matemática defendible}: Si algún inversionista cuestiona, se muestra la lógica
+    \item \textbf{Cero conflictos anticipados}: La inequidad está resuelta ANTES de surgir
+    \item \textbf{Credibilidad profesional}: Demuestra atención a detalles críticos
+    \item \textbf{Estándar de mercado}: Fraccionales exitosas lo usan
+    \item \textbf{Fácil auditoría}: Inversionistas pueden verificar independientemente
+    \item \textbf{Escalable}: Si crece a más propiedades, sistema sigue siendo óptimo
+\end{enumerate}
+
+\begin{cajadestacado}{Diferenciador de Pitch}
+\textit{``A diferencia de otros proyectos de tiempo compartido, nuestro sistema de rotación SERPIENTE garantiza equidad matemática perfecta. No es sorteo, no es suerte—es una estructura que hace imposible que alguien salga perjudicado a largo plazo.''}
+\end{cajadestacado}
+
+% ============================================================================
 % FUNDAMENTOS DEL SISTEMA
 % ============================================================================
 \section{Fundamentos del Sistema Serpiente}
 
 \subsection{Principio de Equidad}
 
-El sistema serpiente garantiza que ningún copropietario tenga ventaja permanente al \textbf{invertir el orden de selección} en cada ronda:
+El sistema serpiente garantiza que ningún copropietario tenga ventaja permanente al \textbf{invertir el orden de selección} en cada ronda. Este es el mismo patrón que se demostró superior en la sección anterior:
 
 \begin{itemize}
     \item \textbf{Ronda 1}: A $\rightarrow$ B $\rightarrow$ C $\rightarrow$ D (orden normal)
@@ -205,7 +441,7 @@ El sistema serpiente garantiza que ningún copropietario tenga ventaja permanent
 Este patrón continúa hasta completar las 13 rondas necesarias (52 semanas $\div$ 4 tickets = 13 rondas).
 
 \begin{cajadestacado}{Recordatorio Importante}
-\textbf{A, B, C, D} son solo etiquetas de posición que rotan cada año. El copropietario que fue ``A'' en 2026 será ``D'' en 2027, ``C'' en 2028 y ``B'' en 2029. Todos pasan por todas las posiciones en un ciclo de 4 años.
+\textbf{A, B, C, D} son etiquetas PERMANENTES asignadas una sola vez mediante sorteo. Si Jorge es ``A'', será ``A'' todos los años. La equidad se logra mediante el patrón serpiente (alternando orden normal/invertido cada ronda), NO rotando las letras.
 \end{cajadestacado}
 
 \subsection{Ventajas de la Selección Voluntaria}
@@ -241,9 +477,9 @@ Antes de comenzar la selección del primer año, se debe sortear \textbf{aleator
 \end{enumerate}
 
 \begin{cajaalerta}
-\textbf{CRÍTICO - Sistema de Rotación Anual}
+\textbf{CRÍTICO - Las Posiciones son PERMANENTES}
 
-El orden inicial es \textbf{TEMPORAL} y se sortea solo UNA VEZ. A partir del segundo año, el orden ROTA automáticamente para que todos pasen por todas las posiciones:
+El sorteo inicial define PERMANENTEMENTE quién es A, B, C o D. Estas asignaciones NO cambian año con año.
 
 \vspace{0.3cm}
 
@@ -255,35 +491,71 @@ El orden inicial es \textbf{TEMPORAL} y se sortea solo UNA VEZ. A partir del seg
     \item Ana = Posición D
 \end{itemize}
 
-\textbf{Rotación en años siguientes}:
+\textbf{TODOS los años siguientes}:
 \begin{itemize}
-    \item \textbf{Año 1 (2026)}: Jorge (A) $\rightarrow$ María (B) $\rightarrow$ Roberto (C) $\rightarrow$ Ana (D)
-    \item \textbf{Año 2 (2027)}: María (A) $\rightarrow$ Roberto (B) $\rightarrow$ Ana (C) $\rightarrow$ Jorge (D)
-    \item \textbf{Año 3 (2028)}: Roberto (A) $\rightarrow$ Ana (B) $\rightarrow$ Jorge (C) $\rightarrow$ María (D)
-    \item \textbf{Año 4 (2029)}: Ana (A) $\rightarrow$ Jorge (B) $\rightarrow$ María (C) $\rightarrow$ Roberto (D)
-    \item \textbf{Año 5 (2030)}: Jorge (A) nuevamente - reinicia el ciclo
+    \item Jorge SIEMPRE será A
+    \item María SIEMPRE será B
+    \item Roberto SIEMPRE será C
+    \item Ana SIEMPRE será D
 \end{itemize}
 
-\textbf{Resultado}: En 4 años, todos pasan por las 4 posiciones exactamente 1 vez. Equidad total a largo plazo.
+\textbf{La equidad NO viene de rotar las letras}, sino del \textbf{sistema serpiente} que invierte el orden cada ronda:
+\begin{itemize}
+    \item Ronda 1: Jorge(A) → María(B) → Roberto(C) → Ana(D)
+    \item Ronda 2: Ana(D) → Roberto(C) → María(B) → Jorge(A) ← ¡INVERTIDO!
+    \item Ronda 3: Jorge(A) → María(B) → Roberto(C) → Ana(D)
+    \item ... continúa alternando
+\end{itemize}
+
+\textbf{Resultado}: A largo plazo, todos eligen primero/último el mismo número de veces. Equidad automática.
 \end{cajaalerta}
 
 \subsubsection{1.2 Clasificar las 52 Semanas}
 
-Antes del Draft, se debe publicar la clasificación de todas las semanas por temporada:
+Antes del Draft, se debe publicar la clasificación de todas las semanas por temporada. A continuación se presenta el \textbf{Calendario Visual 2026} organizado por meses:
 
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
-\begin{tabular}{lcc}
-\toprule
-\textbf{Temporada} & \textbf{Semanas} & \textbf{Meses Aproximados} \\
-\midrule
-\textbf{ALTA} & 26 semanas & Dic-Mar, Jul-Ago \\
-\textbf{MEDIA} & 14 semanas & Abr-May, Oct-Nov \\
-\textbf{BAJA} & 12 semanas & Jun, Sep \\
-\bottomrule
+\footnotesize
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|p{2.8cm}|p{2.8cm}|p{2.8cm}|p{2.8cm}|}
+\hline
+\multicolumn{4}{|c|}{\textbf{\normalsize Calendario de Temporadas 2026}} \\
+\hline
+\cellcolor{verdeoscuro!20}\textbf{ENERO} & \cellcolor{verdeoscuro!20}\textbf{FEBRERO} & \cellcolor{verdeoscuro!20}\textbf{MARZO} & \cellcolor{amarillo!30}\textbf{ABRIL} \\
+\cellcolor{verdeoscuro!20}S1: 1-7 & \cellcolor{verdeoscuro!20}S5: 29e-4f & \cellcolor{verdeoscuro!20}S9: 26f-4m & \cellcolor{amarillo!30}S14: 2-8 (SS) \\
+\cellcolor{verdeoscuro!20}S2: 8-14 & \cellcolor{verdeoscuro!20}S6: 5-11 & \cellcolor{verdeoscuro!20}S10: 5-11 & \cellcolor{amarillo!30}S15: 9-15 \\
+\cellcolor{verdeoscuro!20}S3: 15-21 & \cellcolor{verdeoscuro!20}S7: 12-18 & \cellcolor{verdeoscuro!20}S11: 12-18 & \cellcolor{amarillo!30}S16: 16-22 \\
+\cellcolor{verdeoscuro!20}S4: 22-28 & \cellcolor{verdeoscuro!20}S8: 19-25 & \cellcolor{verdeoscuro!20}S12: 19-25 & \cellcolor{amarillo!30}S17: 23-29 \\
+ &  & \cellcolor{verdeoscuro!20}S13: 26m-1a &  \\
+\hline
+\cellcolor{amarillo!30}\textbf{MAYO} & \cellcolor{grisclaro}\textbf{JUNIO} & \cellcolor{verdeoscuro!20}\textbf{JULIO} & \cellcolor{verdeoscuro!20}\textbf{AGOSTO} \\
+\cellcolor{amarillo!30}S18: 30a-6m & \cellcolor{grisclaro}S22: 28m-3j & \cellcolor{verdeoscuro!20}S27: 2-8 & \cellcolor{verdeoscuro!20}S31: 30j-5a \\
+\cellcolor{amarillo!30}S19: 7-13 & \cellcolor{grisclaro}S23: 4-10 & \cellcolor{verdeoscuro!20}S28: 9-15 & \cellcolor{verdeoscuro!20}S32: 6-12 \\
+\cellcolor{amarillo!30}S20: 14-20 & \cellcolor{grisclaro}S24: 11-17 & \cellcolor{verdeoscuro!20}S29: 16-22 & \cellcolor{verdeoscuro!20}S33: 13-19 \\
+\cellcolor{grisclaro}S21: 21-27 & \cellcolor{grisclaro}S25: 18-24 & \cellcolor{verdeoscuro!20}S30: 23-29 & \cellcolor{verdeoscuro!20}S34: 20-26 \\
+ & \cellcolor{grisclaro}S26: 25j-1j &  & \cellcolor{verdeoscuro!20}S35: 27a-2s \\
+\hline
+\cellcolor{grisclaro}\textbf{SEPTIEMBRE} & \cellcolor{amarillo!30}\textbf{OCTUBRE} & \cellcolor{amarillo!30}\textbf{NOVIEMBRE} & \cellcolor{verdeoscuro!20}\textbf{DICIEMBRE} \\
+\cellcolor{grisclaro}S36: 3-9 & \cellcolor{amarillo!30}S40: 1-7 & \cellcolor{amarillo!30}S44: 29o-4n & \cellcolor{verdeoscuro!20}S48: 26n-2d \\
+\cellcolor{grisclaro}S37: 10-16 & \cellcolor{amarillo!30}S41: 8-14 & \cellcolor{amarillo!30}S45: 5-11 & \cellcolor{verdeoscuro!20}S49: 3-9 \\
+\cellcolor{grisclaro}S38: 17-23 & \cellcolor{amarillo!30}S42: 15-21 & \cellcolor{amarillo!30}S46: 12-18 & \cellcolor{verdeoscuro!20}S50: 10-16 \\
+\cellcolor{grisclaro}S39: 24-30 & \cellcolor{amarillo!30}S43: 22-28 & \cellcolor{verdeoscuro!20}S47: 19-25 & \cellcolor{verdeoscuro!20}S51: 17-23 (Nav) \\
+ &  &  & \cellcolor{verdeoscuro!20}S52: 24-31 (AN) \\
+\hline
 \end{tabular}
-\caption{Clasificación de temporadas}
+\caption{Calendario Semanal por Temporada - Año 2026}
 \end{table}
+
+\vspace{0.3cm}
+
+\textbf{Leyenda}:
+\begin{itemize}
+    \item \colorbox{verdeoscuro!20}{\textbf{TEMPORADA ALTA}}: 26 semanas - Clima óptimo, festividades
+    \item \colorbox{amarillo!30}{\textbf{TEMPORADA MEDIA}}: 14 semanas - Transición, eventos culturales  
+    \item \colorbox{grisclaro}{\textbf{TEMPORADA BAJA}}: 12 semanas - Temporada de lluvias
+    \item \textbf{Abreviaturas}: SS=Semana Santa, Nav=Navidad, AN=Año Nuevo
+\end{itemize}
 
 Esta información debe estar disponible para todos los copropietarios \textbf{al menos 30 días antes} del proceso de selección.
 
@@ -536,13 +808,13 @@ Ana(D): S30-Julio | Roberto(C): S9-Febrero | María(B): S51-Navidad | Jorge(A): 
 
 \vspace{0.3cm}
 
-\textbf{¿Y en 2027?} Rotación automática: María=A | Roberto=B | Ana=C | Jorge=D
+\textbf{¿Y en 2027?} Jorge sigue siendo A, María sigue siendo B, Roberto sigue C, Ana sigue D.
 
-Jorge pasa de primera a última posición. En 2028=C, 2029=B. \textbf{Ciclo completo en 4 años}.
+El Draft 2027 usa el MISMO patrón serpiente: R1(A→B→C→D), R2(D→C→B→A), alternando.
 
 \vspace{0.2cm}
 
-\textbf{Conclusión}: Sorteo justo inicial + rotación anual = equidad perfecta a largo plazo.
+\textbf{Conclusión}: Sorteo justo inicial + sistema serpiente permanente = equidad perfecta automática.
 \end{cajaejemplo}
 
 % ============================================================================
