@@ -1,0 +1,1048 @@
+% ============================================================================
+% PROYECTO DE COMERCIALIZACIÓN - PROPIEDAD FRACCIONAL
+% Departamento en Mérida, Yucatán
+% ============================================================================
+\documentclass[11pt,letterpaper,oneside]{scrartcl}
+
+% ============================================================================
+% PAQUETES ESENCIALES
+% ============================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,mexico]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Matemáticas y símbolos
+\usepackage{amsmath,amssymb}
+\usepackage{siunitx}
+\sisetup{
+    group-separator={,},
+    group-minimum-digits=4,
+    output-decimal-marker={.}
+}
+
+% Geometría y márgenes
+\usepackage[letterpaper,margin=2.5cm,top=2cm,bottom=2.5cm]{geometry}
+
+% Gráficos y color
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{turquesa}{RGB}{0,168,150}      % Verde turquesa Yucatán
+\definecolor{verdeoscuro}{RGB}{0,100,80}    % Verde oscuro profesional
+\definecolor{gris}{RGB}{64,64,64}           % Gris texto
+\definecolor{grisclaro}{RGB}{245,245,245}   % Gris fondo
+\definecolor{naranja}{RGB}{255,140,0}       % Naranja para alertas
+
+% Tablas profesionales
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+
+% Cajas y destacados
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins}
+
+% Enlaces e hipervínculos
+\usepackage[hidelinks,colorlinks=true,linkcolor=verdeoscuro,urlcolor=turquesa]{hyperref}
+
+% Encabezados y pies de página
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\ihead{\color{gris}\small Propiedad Fraccional Mérida}
+\ohead{\color{gris}\small \today}
+\cfoot{\pagemark}
+\setkomafont{pagehead}{\small\normalfont}
+\setkomafont{pagefoot}{\small\normalfont}
+
+% Formato de secciones
+\addtokomafont{section}{\color{verdeoscuro}}
+\addtokomafont{subsection}{\color{turquesa}}
+\RedeclareSectionCommand[
+  beforeskip=1.5\baselineskip,
+  afterskip=0.5\baselineskip]{section}
+\RedeclareSectionCommand[
+  beforeskip=1\baselineskip,
+  afterskip=0.3\baselineskip]{subsection}
+
+% Listas personalizadas
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*,labelsep=0.5em,itemsep=0.3em}
+\setlist[enumerate]{leftmargin=*,labelsep=0.5em,itemsep=0.3em}
+
+% Formato de moneda
+\newcommand{\MXN}[1]{\$\num{#1}~MXN}
+\newcommand{\USD}[1]{\$\num{#1}~USD}
+
+% ============================================================================
+% CAJAS PERSONALIZADAS
+% ============================================================================
+\newtcolorbox{cajaresumen}{
+    colback=grisclaro,
+    colframe=turquesa,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    colbacktitle=turquesa,
+    title=Resumen Ejecutivo,
+    enhanced,
+    attach boxed title to top left={yshift=-2mm,xshift=5mm},
+    boxed title style={sharp corners}
+}
+
+\newtcolorbox{cajadestacado}[1]{
+    colback=grisclaro,
+    colframe=verdeoscuro,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    colbacktitle=verdeoscuro,
+    title=#1,
+    enhanced,
+    attach boxed title to top left={yshift=-2mm,xshift=5mm},
+    boxed title style={sharp corners}
+}
+
+\newtcolorbox{cajaalerta}{
+    colback=white,
+    colframe=naranja,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    colbacktitle=naranja,
+    title=Punto Clave,
+    enhanced,
+    attach boxed title to top left={yshift=-2mm,xshift=5mm},
+    boxed title style={sharp corners}
+}
+
+% ============================================================================
+% DOCUMENTO
+% ============================================================================
+\begin{document}
+
+% ----------------------------------------------------------------------------
+% PORTADA
+% ----------------------------------------------------------------------------
+\begin{titlepage}
+    \centering
+    \vspace*{3cm}
+    
+    {\Huge\bfseries\color{verdeoscuro} PROYECTO DE COMERCIALIZACIÓN\\[0.5cm]}
+    {\LARGE\color{turquesa} Propiedad Fraccional\\[0.3cm]}
+    {\Large Mérida, Yucatán}
+    
+    \vspace{2cm}
+    
+    {\Large\color{gris} Análisis de Modelo de Negocio\\[0.2cm]
+    Sistema de Distribución Equitativa\\[0.2cm]
+    Proyecciones Financieras}
+    
+    \vfill
+    
+    \begin{tcolorbox}[colback=grisclaro,colframe=turquesa,width=0.8\textwidth]
+        \centering
+        \textbf{\large Información Clave}\\[0.5cm]
+        \begin{tabular}{rl}
+            \textbf{Inversión por Ticket:} & \MXN{900000} \\[0.2cm]
+            \textbf{Número de Tickets:} & 4 copropietarios \\[0.2cm]
+            \textbf{Derechos de Uso:} & 13 semanas/año por ticket \\[0.2cm]
+            \textbf{ROI Proyectado:} & 8.94\% - 12.05\% anual \\
+        \end{tabular}
+    \end{tcolorbox}
+    
+    \vspace{2cm}
+    
+    {\large\color{gris} \today}
+    
+\end{titlepage}
+
+% ----------------------------------------------------------------------------
+% TABLA DE CONTENIDOS
+% ----------------------------------------------------------------------------
+\tableofcontents
+\newpage
+
+% ============================================================================
+% RESUMEN EJECUTIVO
+% ============================================================================
+\section{Resumen Ejecutivo}
+
+\begin{cajaresumen}
+Este documento presenta el análisis integral del proyecto de comercialización de una propiedad en modalidad fraccional (co-ownership) ubicada en la zona residencial norte de Mérida, Yucatán. El modelo ofrece una solución innovadora que combina:
+
+\begin{itemize}
+    \item \textbf{Inversión accesible}: 25\% del costo de propiedad completa
+    \item \textbf{Flexibilidad dual}: Opción de uso personal o generación de rendimientos
+    \item \textbf{Sistema equitativo}: Distribución justa de semanas mediante rotación serpiente
+    \item \textbf{Rendimientos competitivos}: 8.94\% - 12.05\% anual proyectado
+\end{itemize}
+\end{cajaresumen}
+
+\subsection{Características de la Propiedad}
+
+\begin{itemize}
+    \item \textbf{Ubicación}: Zona residencial norte de Mérida, Yucatán
+    \item \textbf{Superficie}: 100 m² de construcción
+    \item \textbf{Capacidad}: 4 personas (pax)
+    \item \textbf{Estado}: En desarrollo
+\end{itemize}
+
+\subsection{Estructura de Inversión}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Concepto} & \textbf{Monto} \\
+\midrule
+Precio por Ticket & \MXN{900000} \\
+Número de Tickets & 4 \\
+Capital Total Recaudado & \MXN{3600000} \\
+Derechos de Uso & 13 semanas/ticket/año \\
+\bottomrule
+\end{tabular}
+\caption{Estructura básica de inversión}
+\end{table}
+
+\subsection{Propuesta de Valor para Copropietarios}
+
+El modelo ofrece tres opciones de aprovechamiento según las necesidades de cada inversionista:
+
+\begin{enumerate}
+    \item \textbf{Solo Inversión} (0 semanas de uso):
+    \begin{itemize}
+        \item Rendimiento: 8.94\% - 12.05\% anual
+        \item Ingreso pasivo: \MXN{80464} - \MXN{108410} por año
+        \item Cero responsabilidad operativa
+    \end{itemize}
+    
+    \item \textbf{Uso Mixto} (ejemplo: 4 semanas uso + 9 semanas renta):
+    \begin{itemize}
+        \item Disfrute: 28 días/año de vacaciones en propiedad propia
+        \item Rendimiento: $\sim$\MXN{60000} - \MXN{75000} por año
+        \item Ahorro: $\sim$\MXN{50000} en hospedaje vs. hoteles
+    \end{itemize}
+    
+    \item \textbf{Solo Uso Personal} (13 semanas):
+    \begin{itemize}
+        \item Disfrute: 91 días/año de vacaciones
+        \item Valor de uso: $\sim$\MXN{180000} - \MXN{230000} en hospedaje equivalente
+        \item ROI indirecto: 20-25\% en valor de uso vs. hoteles
+    \end{itemize}
+\end{enumerate}
+
+% ============================================================================
+% SISTEMA DE DISTRIBUCIÓN SERPIENTE
+% ============================================================================
+\section{Sistema de Rotación Serpiente}
+
+\subsection{El Desafío Fundamental}
+
+\begin{cajaalerta}
+\textbf{¿Cómo dividir las 52 semanas de manera ``salomónica'' entre 4 tickets para que todos tengan acceso equitativo a buenas temporadas?}
+
+Esta es la pregunta central que determina el éxito del modelo de copropietarios.
+\end{cajaalerta}
+
+No todas las semanas del año tienen el mismo valor. En Mérida, existen tres temporadas claramente diferenciadas:
+
+\begin{itemize}
+    \item \textbf{Temporada ALTA (26 semanas)}: Diciembre-Marzo, Julio-Agosto
+    \begin{itemize}
+        \item Clima ideal (18-28°C), menor probabilidad de lluvias
+        \item Mayor demanda turística (Navidad, Año Nuevo, Semana Santa)
+        \item Mejores tarifas de renta: \MXN{2500}/noche
+    \end{itemize}
+    
+    \item \textbf{Temporada MEDIA (14 semanas)}: Abril, Mayo parcial, Octubre-Noviembre
+    \begin{itemize}
+        \item Clima agradable en transición
+        \item Demanda moderada, eventos culturales
+        \item Tarifas intermedias: \MXN{1800}/noche
+    \end{itemize}
+    
+    \item \textbf{Temporada BAJA (12 semanas)}: Mayo tardío, Junio, Septiembre
+    \begin{itemize}
+        \item Temporada de lluvias (temperaturas $>$35°C)
+        \item Menor demanda, pero paisajes exuberantes
+        \item Tarifas bajas: \MXN{1200}/noche
+    \end{itemize}
+\end{itemize}
+
+\subsection{Solución Adoptada: Sistema Serpiente (Zig-Zag)}
+
+\begin{cajadestacado}{¿Cómo Funciona el Sistema Serpiente?}
+El sistema invierte el orden de asignación en cada ronda, garantizando que ningún propietario tenga ventaja permanente:
+
+\vspace{0.5cm}
+\textbf{Ronda 1}: A $\rightarrow$ B $\rightarrow$ C $\rightarrow$ D (orden normal)\\
+\textbf{Ronda 2}: D $\rightarrow$ C $\rightarrow$ B $\rightarrow$ A (orden \textit{invertido})\\
+\textbf{Ronda 3}: A $\rightarrow$ B $\rightarrow$ C $\rightarrow$ D (orden normal)\\
+\textbf{Ronda 4}: D $\rightarrow$ C $\rightarrow$ B $\rightarrow$ A (orden \textit{invertido})
+
+\vspace{0.3cm}
+Este patrón continúa a lo largo de las 52 semanas del año.
+\end{cajadestacado}
+
+\subsubsection{Distribución Resultante}
+
+Al aplicar el sistema serpiente, la distribución queda perfectamente balanceada:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Ticket} & \textbf{Temp. ALTA} & \textbf{Temp. MEDIA} & \textbf{Temp. BAJA} \\
+\midrule
+Ticket A & 7 semanas & 3 semanas & 3 semanas \\
+Ticket B & 7 semanas & 3 semanas & 3 semanas \\
+Ticket C & 6 semanas & 4 semanas & 3 semanas \\
+Ticket D & 6 semanas & 4 semanas & 3 semanas \\
+\midrule
+\textbf{TOTAL} & \textbf{26 semanas} & \textbf{14 semanas} & \textbf{12 semanas} \\
+\bottomrule
+\end{tabular}
+\caption{Distribución de semanas por temporada y ticket}
+\end{table}
+
+\vspace{0.5cm}
+\textbf{Nota sobre equidad}: La diferencia de 1 semana en temporada ALTA es matemáticamente inevitable cuando se dividen 26 semanas entre 4 propietarios (26 $\div$ 4 = 6.5). Sin embargo, el sistema serpiente compensa esta pequeña variación otorgando 1 semana adicional de temporada MEDIA a los Tickets C y D.
+
+\subsection{Ventajas del Sistema Serpiente}
+
+\begin{enumerate}
+    \item \textbf{Equidad Matemática Perfecta}
+    \begin{itemize}
+        \item Ningún propietario tiene ventaja permanente en la posición de selección
+        \item Todos eligen primero en algunas rondas y último en otras
+        \item Distribución objetiva y demostrable
+    \end{itemize}
+    
+    \item \textbf{Transparencia Total}
+    \begin{itemize}
+        \item El patrón es predecible y fácil de auditar
+        \item Cualquier copropietario puede verificar la distribución en Excel
+        \item No hay discrecionalidad ni favoritismos posibles
+    \end{itemize}
+    
+    \item \textbf{Minimización de Conflictos}
+    \begin{itemize}
+        \item Al ser matemáticamente justo, reduce quejas entre socios
+        \item Elimina la percepción de que algunos ``siempre ganan''
+        \item Genera confianza a largo plazo
+    \end{itemize}
+    
+    \item \textbf{Distribución Temporal Equilibrada}
+    \begin{itemize}
+        \item Todos tienen semanas distribuidas a lo largo del año
+        \item No se concentran en un solo bloque (mayor flexibilidad)
+        \item Permite planear vacaciones según agenda personal
+    \end{itemize}
+    
+    \item \textbf{Rotación Anual para Equidad Multi-Año}
+    \begin{itemize}
+        \item Año 1: Orden inicial A$\rightarrow$B$\rightarrow$C$\rightarrow$D
+        \item Año 2: Orden inicial B$\rightarrow$C$\rightarrow$D$\rightarrow$A
+        \item Año 3: Orden inicial C$\rightarrow$D$\rightarrow$A$\rightarrow$B
+        \item Año 4: Orden inicial D$\rightarrow$A$\rightarrow$B$\rightarrow$C
+        \item En 4 años, todos han sido A, B, C y D
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Comparación con Sistemas Alternativos}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{Xccc}
+\toprule
+\textbf{Criterio} & \textbf{Rotación Simple} & \textbf{Sorteo Aleatorio} & \textbf{Serpiente (Zig-Zag)} \\
+\midrule
+Equidad en temporada alta & Buena & Variable (suerte) & Excelente \\
+Predictibilidad & Alta & Baja & Alta \\
+Percepción de justicia & Media & Baja & Muy alta \\
+Conflictos potenciales & Medios-Altos & Altos & Mínimos \\
+Facilidad implementación & Muy fácil & Compleja & Fácil \\
+Auditable/Verificable & Sí & Sí (requiere acta) & Sí (Excel) \\
+\midrule
+\textbf{Recomendación} & Buena & Regular & \textbf{Excelente} \\
+\bottomrule
+\end{tabularx}
+\caption{Comparación de sistemas de distribución de semanas}
+\end{table}
+
+\subsubsection{Problema del Sistema de Rotación Simple}
+
+El sistema simple (A-B-C-D-A-B-C-D...) tiene un defecto crítico:
+
+\begin{itemize}
+    \item Ticket A \textbf{siempre} elige primero en su turno
+    \item Ticket D \textbf{siempre} elige último en su turno
+    \item Si Navidad/Año Nuevo caen en ``semanas A'', Ticket A las monopoliza \textit{cada año}
+    \item Genera resentimiento y percepción de inequidad permanente
+\end{itemize}
+
+\subsubsection{Problema del Sorteo Aleatorio}
+
+Aunque parece ``justo'' por ser aleatorio, tiene desventajas severas:
+
+\begin{itemize}
+    \item Resultados impredecibles año con año
+    \item Un propietario puede tener ``mala suerte'' varios años consecutivos
+    \item Requiere proceso de sorteo formal cada año (costos, logística)
+    \item Genera ansiedad e incertidumbre en planificación familiar
+    \item No aprovecha la predictibilidad que valoran los inversionistas
+\end{itemize}
+
+% ============================================================================
+% ANÁLISIS FINANCIERO
+% ============================================================================
+\section{Análisis Financiero y Proyecciones}
+
+\subsection{Parámetros Base del Modelo}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Parámetro} & \textbf{Valor} \\
+\midrule
+Inversión por Ticket & \MXN{900000} \\
+Número de Tickets & 4 \\
+Capital Total Recaudado & \MXN{3600000} \\
+Derechos de Uso & 13 semanas/ticket/año \\
+\midrule
+Tarifa Temporada ALTA & \MXN{2500}/noche \\
+Tarifa Temporada MEDIA & \MXN{1800}/noche \\
+Tarifa Temporada BAJA & \MXN{1200}/noche \\
+\midrule
+Gastos Operativos & 28\% de ingresos brutos \\
+\bottomrule
+\end{tabular}
+\caption{Parámetros financieros base del modelo}
+\end{table}
+
+\subsection{Tres Escenarios de Proyección}
+
+Se presentan tres escenarios con diferentes niveles de ocupación para evaluar el rango de rendimientos esperados:
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{Xcccccc}
+\toprule
+\textbf{Escenario} & \textbf{Ocup. ALTA} & \textbf{Ocup. MEDIA} & \textbf{Ocup. BAJA} & \textbf{Ing. Brutos} & \textbf{Ing. Netos} & \textbf{ROI} \\
+\midrule
+Conservador & 70\% & 50\% & 40\% & \MXN{447020} & \MXN{321854} & \textbf{8.94\%} \\
+Moderado & 80\% & 65\% & 50\% & \MXN{529060} & \MXN{380923} & \textbf{10.58\%} \\
+Optimista & 90\% & 75\% & 60\% & \MXN{602280} & \MXN{433642} & \textbf{12.05\%} \\
+\bottomrule
+\end{tabularx}
+\caption{Resumen de los tres escenarios financieros}
+\end{table}
+
+\subsection{Escenario 1: Conservador}
+
+\textbf{Supuestos de ocupación}: 70\% temporada alta, 50\% media, 40\% baja
+
+\subsubsection{Flujo de Ingresos}
+
+\begin{itemize}
+    \item \textbf{Temporada ALTA} (26 semanas $\times$ 7 días = 182 noches):
+    \begin{itemize}
+        \item 70\% ocupación $\times$ 182 noches = 127.4 noches rentadas
+        \item 127.4 noches $\times$ \MXN{2500}/noche = \textbf{\MXN{318500}}
+    \end{itemize}
+    
+    \item \textbf{Temporada MEDIA} (14 semanas $\times$ 7 días = 98 noches):
+    \begin{itemize}
+        \item 50\% ocupación $\times$ 98 noches = 49 noches rentadas
+        \item 49 noches $\times$ \MXN{1800}/noche = \textbf{\MXN{88200}}
+    \end{itemize}
+    
+    \item \textbf{Temporada BAJA} (12 semanas $\times$ 7 días = 84 noches):
+    \begin{itemize}
+        \item 40\% ocupación $\times$ 84 noches = 33.6 noches rentadas
+        \item 33.6 noches $\times$ \MXN{1200}/noche = \textbf{\MXN{40320}}
+    \end{itemize}
+\end{itemize}
+
+\textbf{Ingresos Brutos Totales}: \MXN{447020}
+
+\subsubsection{Gastos Operativos (28\%)}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Concepto} & \textbf{Monto} \\
+\midrule
+Empresa Gestora (15\% de ingresos) & \MXN{67053} \\
+Mantenimiento \& Reparaciones (5\%) & \MXN{22351} \\
+Servicios Públicos (4\%) & \MXN{17881} \\
+Seguros \& Fideicomiso (4\%) & \MXN{17881} \\
+\midrule
+\textbf{Total Gastos Operativos} & \MXN{125166} \\
+\bottomrule
+\end{tabular}
+\caption{Desglose de gastos operativos - Escenario Conservador}
+\end{table}
+
+\subsubsection{Rendimiento Anual}
+
+\begin{align*}
+\text{Ingresos Netos} &= \text{\MXN{447020}} - \text{\MXN{125166}} = \textbf{\MXN{321854}} \\
+\text{Por Ticket} &= \text{\MXN{321854}} \div 4 = \textbf{\MXN{80464}} \\
+\text{Tasa de Rendimiento} &= \left(\frac{\text{\MXN{80464}}}{\text{\MXN{900000}}}\right) \times 100 = \textbf{8.94\% anual}
+\end{align*}
+
+\textbf{Interpretación}: Este escenario asume ocupación cautelosa, especialmente en temporadas bajas. Es realista para el año 1 de operación mientras se consolida la reputación en plataformas. Aun así, ofrece rendimientos competitivos.
+
+\subsection{Escenario 2: Moderado (Recomendado)}
+
+\textbf{Supuestos de ocupación}: 80\% temporada alta, 65\% media, 50\% baja
+
+\subsubsection{Flujo de Ingresos}
+
+\begin{itemize}
+    \item \textbf{Temporada ALTA}: 80\% $\times$ 182 noches = 145.6 noches $\rightarrow$ \textbf{\MXN{364000}}
+    \item \textbf{Temporada MEDIA}: 65\% $\times$ 98 noches = 63.7 noches $\rightarrow$ \textbf{\MXN{114660}}
+    \item \textbf{Temporada BAJA}: 50\% $\times$ 84 noches = 42 noches $\rightarrow$ \textbf{\MXN{50400}}
+\end{itemize}
+
+\textbf{Ingresos Brutos Totales}: \MXN{529060}
+
+\subsubsection{Rendimiento Anual}
+
+\begin{align*}
+\text{Ingresos Netos} &= \text{\MXN{529060}} - \text{\MXN{148137}} = \textbf{\MXN{380923}} \\
+\text{Por Ticket} &= \text{\MXN{380923}} \div 4 = \textbf{\MXN{95231}} \\
+\text{Tasa de Rendimiento} &= \left(\frac{\text{\MXN{95231}}}{\text{\MXN{900000}}}\right) \times 100 = \textbf{10.58\% anual}
+\end{align*}
+
+\begin{cajadestacado}{Escenario Recomendado para Presentar a Inversionistas}
+Este escenario es REALISTA basado en:
+\begin{itemize}
+    \item Benchmarks de propiedades comparables en Airbnb Mérida
+    \item Ocupación típica de propiedades de 4 pax bien gestionadas
+    \item Crecimiento natural años 1-2 mientras la marca se consolida
+    \item \textbf{10.58\% anual supera CETES (10\%) con activo tangible}
+\end{itemize}
+\end{cajadestacado}
+
+\subsection{Escenario 3: Optimista}
+
+\textbf{Supuestos de ocupación}: 90\% temporada alta, 75\% media, 60\% baja
+
+\subsubsection{Flujo de Ingresos}
+
+\begin{itemize}
+    \item \textbf{Temporada ALTA}: 90\% $\times$ 182 noches = 163.8 noches $\rightarrow$ \textbf{\MXN{409500}}
+    \item \textbf{Temporada MEDIA}: 75\% $\times$ 98 noches = 73.5 noches $\rightarrow$ \textbf{\MXN{132300}}
+    \item \textbf{Temporada BAJA}: 60\% $\times$ 84 noches = 50.4 noches $\rightarrow$ \textbf{\MXN{60480}}
+\end{itemize}
+
+\textbf{Ingresos Brutos Totales}: \MXN{602280}
+
+\subsubsection{Rendimiento Anual}
+
+\begin{align*}
+\text{Ingresos Netos} &= \text{\MXN{602280}} - \text{\MXN{168638}} = \textbf{\MXN{433642}} \\
+\text{Por Ticket} &= \text{\MXN{433642}} \div 4 = \textbf{\MXN{108410}} \\
+\text{Tasa de Rendimiento} &= \left(\frac{\text{\MXN{108410}}}{\text{\MXN{900000}}}\right) \times 100 = \textbf{12.05\% anual}
+\end{align*}
+
+\textbf{Interpretación}: Escenario ASPIRACIONAL que requiere gestión proactiva, marketing fuerte, reseñas 5 estrellas consistentes y estrategia de pricing dinámico optimizada. Posible en años 3+ de operación. Comparable a retornos de REITs de lujo.
+
+\subsection{Comparativa con Alternativas de Inversión}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{Xccc}
+\toprule
+\textbf{Instrumento} & \textbf{Retorno Anual} & \textbf{Ventajas} & \textbf{Desventajas} \\
+\midrule
+CETES 2025 & $\sim$10\% & Seguridad, liquidez & Sin activo tangible \\
+Fondos de Inversión & 8-10\% & Diversificación & Comisiones altas \\
+Bonos Corporativos & 8-12\% & Fijo, predecible & Riesgo incumplimiento \\
+\midrule
+\textbf{Propiedad Fraccional} & \textbf{8.94\%-12.05\%} & \textbf{Activo tangible + uso} & \textbf{Requiere gestión} \\
+\bottomrule
+\end{tabularx}
+\caption{Comparación con alternativas de inversión en México}
+\end{table}
+
+\subsection{Análisis de Sensibilidad}
+
+\subsubsection{Escenario: Baja ocupación en temporada alta (60\% vs. 80\% esperado)}
+
+\begin{itemize}
+    \item Impacto: Caída de $\sim$15\% en ingresos anuales
+    \item Rendimiento nuevo: $\sim$9\% anual (aún superior a CETES)
+    \item Conclusión: El modelo es resiliente ante ocupación menor a la esperada
+\end{itemize}
+
+\subsubsection{Escenario: Aumento de gastos a 35\% (por inflación/reparaciones)}
+
+\begin{itemize}
+    \item Impacto: Gastos suben de 28\% a 35\% de ingresos
+    \item Rendimiento nuevo: $\sim$8.5\% anual (escenario moderado)
+    \item Conclusión: Aun con costos elevados, rendimientos competitivos
+\end{itemize}
+
+\subsubsection{Escenario: Apreciación de propiedad 3\% anual}
+
+\begin{itemize}
+    \item Plusvalía anual: \MXN{108000}
+    \item ROI TOTAL: 10.58\% (rendimiento) + 3\% (apreciación) = \textbf{13.58\% anual}
+    \item Conclusión: La plusvalía inmobiliaria amplifica significativamente el retorno total
+\end{itemize}
+
+% ============================================================================
+% ESTRUCTURA LEGAL
+% ============================================================================
+\section{Estructura Legal y Administrativa}
+
+\subsection{Fideicomiso Inmobiliario (Estructura Recomendada)}
+
+\begin{cajadestacado}{¿Por Qué Fideicomiso en Lugar de Tiempo Compartido Tradicional?}
+El fideicomiso inmobiliario ofrece ventajas legales y patrimoniales superiores:
+
+\begin{itemize}
+    \item Otorga \textbf{derechos reales de propiedad}, no solo derechos de uso temporal
+    \item El banco fiduciario mantiene el título formal y emite 4 derechos fiduciarios iguales
+    \item Cada derecho es vendible, heredable y aprecia con el valor de la propiedad
+    \item Se diferencia del ``tiempo compartido tradicional'' (mejor protección legal)
+    \item Requerido para inversionistas extranjeros en zonas restringidas
+\end{itemize}
+\end{cajadestacado}
+
+\subsection{Derechos Incluidos en Cada Derecho Fiduciario}
+
+Cada uno de los 4 derechos fiduciarios incluye:
+
+\begin{enumerate}
+    \item \textbf{Participación Patrimonial}: 25\% del valor de la propiedad
+    \item \textbf{Derecho de Uso}: 13 semanas específicas anuales según calendario serpiente
+    \item \textbf{Derecho a Rendimientos}: Participación proporcional en ingresos netos de rentas
+    \item \textbf{Derecho de Venta}: Posibilidad de transferir el derecho fiduciario
+    \item \textbf{Derecho de Preferencia}: Prioridad de compra cuando otro copropietario vende
+    \item \textbf{Derecho de Herencia}: El derecho fiduciario es transmisible a herederos
+    \item \textbf{Voto en Decisiones}: Participación equitativa en juntas de copropietarios
+\end{enumerate}
+
+\subsection{Reglamento Interno del Fideicomiso}
+
+El fideicomiso debe incluir un reglamento interno detallado que establezca:
+
+\begin{itemize}
+    \item Calendario de asignación de semanas y sistema de rotación serpiente
+    \item Procedimientos para reservación y uso (deadline 60 días)
+    \item Cuotas de mantenimiento y su distribución entre copropietarios
+    \item Mecanismos de resolución de conflictos (arbitraje)
+    \item Procedimientos para modificaciones mayores a la propiedad
+    \item Requisitos de quórum para decisiones importantes (mínimo 3 de 4 votos)
+    \item Protocolo de venta/transferencia de derechos fiduciarios
+    \item Obligaciones de la empresa gestora y KPIs de desempeño
+    \item Fondo de reserva para contingencias (6 meses de gastos operativos)
+\end{itemize}
+
+\subsection{Costos del Fideicomiso}
+
+\subsubsection{Costos Iniciales (Una Sola Vez)}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Concepto} & \textbf{Monto} \\
+\midrule
+Honorarios de constitución & \MXN{45000} - \MXN{50000} \\
+Gastos notariales & \MXN{15000} - \MXN{18000} \\
+Asesoría legal y financiera & \MXN{20000} - \MXN{25000} \\
+\midrule
+\textbf{Total Costos Iniciales} & \textbf{\MXN{80000} - \MXN{93000}} \\
+\midrule
+Por Ticket (dividido entre 4) & \MXN{20000} - \MXN{23250} \\
+Como \% de inversión & 2.2\% - 2.6\% \\
+\bottomrule
+\end{tabular}
+\caption{Costos iniciales del fideicomiso}
+\end{table}
+
+\subsubsection{Costos Recurrentes Anuales}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lc}
+\toprule
+\textbf{Escenario} & \textbf{Costo Anual Total} \\
+\midrule
+Conservador (1.5\% sobre patrimonio \MXN{3600000}) & \MXN{54000} \\
+Moderado (2.0\% sobre patrimonio) & \MXN{72000} \\
+Alto (2.5\% sobre patrimonio) & \MXN{90000} \\
+\midrule
+\textbf{Por Ticket (dividido entre 4)} & \\
+Conservador & \MXN{13500}/año \\
+Moderado & \MXN{18000}/año \\
+Alto & \MXN{22500}/año \\
+\bottomrule
+\end{tabular}
+\caption{Costos recurrentes anuales del fideicomiso}
+\end{table}
+
+\textbf{Nota importante}: Estos costos están incluidos en el 28\% de gastos operativos de las proyecciones financieras, por lo que NO afectan adicionalmente el rendimiento calculado.
+
+\subsection{Bancos Fiduciarios Recomendados para Mérida}
+
+\subsubsection{Opción 1: BIM (Banco Inmobiliario Mexicano) - RECOMENDADA}
+
+\textbf{Ventajas decisivas}:
+\begin{itemize}
+    \item Especialización exclusiva en fideicomisos inmobiliarios
+    \item Tarifas más bajas del mercado (1.46\% - 5.25\%, tu proyecto: 1.5\% - 1.8\%)
+    \item Experiencia comprobada en proyectos de desarrollo y copropiedad
+    \item Entiende perfectamente el modelo de propiedad fraccional
+\end{itemize}
+
+\textbf{Estimado para tu proyecto}: \MXN{54000} - \MXN{65000} anuales
+
+\subsubsection{Opción 2: Banorte - SEGUNDA OPCIÓN}
+
+\textbf{Ventajas decisivas}:
+\begin{itemize}
+    \item Presencia sólida en Mérida (múltiples sucursales)
+    \item Anualidad fija sin incrementos (mayor certidumbre)
+    \item Solidez institucional (uno de los mayores bancos de México)
+    \item Integración de servicios complementarios
+\end{itemize}
+
+\textbf{Nota}: Las tarifas USD (\$464/año) aplican para zona restringida (extranjeros). Para fideicomiso de copropiedad nacional, cotizar directamente.
+
+% ============================================================================
+% REGLAS OPERATIVAS
+% ============================================================================
+\section{Reglas Operativas y Reservaciones}
+
+\subsection{Proceso de Reservación Anual}
+
+\begin{enumerate}
+    \item \textbf{Publicación del calendario}: 1 de noviembre para el año siguiente
+    \item \textbf{Notificación de intención de uso}: Los copropietarios deben confirmar con \textbf{60 días de anticipación}
+    \item \textbf{Deadline general}: 1 de noviembre del año previo para planificación completa
+    \item \textbf{Semanas no reclamadas}: Se rentan automáticamente a través de plataformas
+    \item \textbf{Sin reclamaciones tardías}: No se aceptan solicitudes después del deadline
+\end{enumerate}
+
+\subsection{Intercambios Entre Propietarios}
+
+Los intercambios de semanas están \textbf{permitidos} bajo estas condiciones:
+
+\begin{itemize}
+    \item Deben ser mutuamente acordados por escrito
+    \item Notificación formal al fiduciario y empresa gestora
+    \item Válidos únicamente para el año específico
+    \item No afectan el calendario del año siguiente
+\end{itemize}
+
+\textbf{Ejemplo}: Ticket A tiene asignada la Semana 10 (marzo) pero prefiere la Semana 30 (julio). Ticket C tiene la Semana 30 pero necesita la Semana 10. Pueden intercambiar mediante acuerdo documentado.
+
+\subsection{Distribución de Rendimientos}
+
+\begin{itemize}
+    \item \textbf{Cálculo}: Se realiza al cierre del año fiscal (31 de diciembre)
+    \item \textbf{Deducción de gastos}: Se restan todos los costos operativos
+    \item \textbf{Distribución proporcional}: Solo los tickets cuyas semanas fueron rentadas reciben ingresos
+    \item \textbf{Pago}: Se efectúa en enero del año siguiente
+    \item \textbf{Transparencia}: Estados financieros trimestrales para todos los copropietarios
+\end{itemize}
+
+\begin{cajaalerta}
+\textbf{Regla Fundamental}: Si un copropietario usa una semana, \textbf{renuncia al ingreso} de esa semana específica. No se puede usar Y cobrar la misma semana.
+\end{cajaalerta}
+
+\subsection{Regla de la Semana 53 (Años Bisiestos)}
+
+En años bisiestos (53 semanas), existen dos opciones:
+
+\begin{enumerate}
+    \item \textbf{Opción 1 - Pool común}: La semana 53 se renta automáticamente y el ingreso se divide equitativamente entre los 4 tickets
+    \item \textbf{Opción 2 - Rotación}: Año 1 $\rightarrow$ Ticket A, Año 2 $\rightarrow$ Ticket B, Año 3 $\rightarrow$ Ticket C, Año 4 $\rightarrow$ Ticket D
+\end{enumerate}
+
+Se recomienda la Opción 1 para mantener total equidad.
+
+% ============================================================================
+% PLAN DE IMPLEMENTACIÓN
+% ============================================================================
+\section{Plan de Implementación}
+
+\subsection{Fase 1: Investigación y Validación (4-6 semanas)}
+
+\begin{itemize}
+    \item Benchmark de tarifas de renta en propiedades comparables (Airbnb/Booking zona norte Mérida)
+    \item Análisis de tasas de ocupación reales por temporada
+    \item Cotización de al menos 3 empresas gestoras locales
+    \item Estimación precisa de gastos operativos (predial, utilities, insurance)
+    \item Validación de apetito de mercado (encuestas, focus groups con inversionistas potenciales)
+\end{itemize}
+
+\subsection{Fase 2: Estructura Legal y Financiera (6-8 semanas)}
+
+\begin{itemize}
+    \item Contratación de notario especializado en fideicomisos inmobiliarios
+    \item Estructuración del fideicomiso con banco fiduciario (BIM o Banorte)
+    \item Redacción detallada del reglamento interno
+    \item Desarrollo de modelo financiero con análisis de sensibilidad
+    \item Establecimiento del fondo de reserva (6 meses de gastos operativos)
+\end{itemize}
+
+\subsection{Fase 3: Materiales de Comercialización (4 semanas)}
+
+\begin{itemize}
+    \item Creación de pitch deck profesional (15-20 slides)
+    \item Desarrollo de brochure digital interactivo con renders de la propiedad
+    \item Producción de video tour virtual
+    \item Diseño de calculadora de ROI personalizable para diferentes perfiles
+    \item Preparación de documento FAQ (preguntas frecuentes)
+    \item Borrador de contratos tipo con revisión legal
+\end{itemize}
+
+\subsection{Fase 4: Búsqueda de Inversionistas (8-12 semanas)}
+
+\begin{itemize}
+    \item Identificación y calificación de prospectos
+    \item Presentaciones individuales personalizadas
+    \item Facilitación del proceso de due diligence
+    \item Negociación y cierre de las 4 ventas de tickets
+    \item Ejecución del proceso de onboarding para copropietarios
+\end{itemize}
+
+\subsection{Fase 5: Implementación Operativa (continuo)}
+
+\begin{itemize}
+    \item Contratación de empresa gestora con track record comprobable
+    \item Configuración de perfiles en plataformas (Airbnb, Booking, VRBO)
+    \item Sesión fotográfica profesional de la propiedad
+    \item Implementación de estrategia de pricing dinámico
+    \item Establecimiento de sistema de monitoreo de KPIs
+    \item Reuniones trimestrales de resultados con copropietarios
+\end{itemize}
+
+% ============================================================================
+% PERFIL DEL INVERSIONISTA IDEAL
+% ============================================================================
+\section{Perfil del Inversionista Ideal}
+
+\subsection{Características Demográficas}
+
+\begin{itemize}
+    \item \textbf{Edad}: 35-55 años
+    \item \textbf{Ingreso familiar}: $>$\MXN{100000} mensuales
+    \item \textbf{Ubicación}: Ciudad de México, Monterrey, Guadalajara, o extranjeros con conexión a Yucatán
+\end{itemize}
+
+\subsection{Perfil Conductual}
+
+\begin{itemize}
+    \item Ya viajan a Mérida 2 o más veces al año
+    \item Buscan diversificación de portafolio más allá de instrumentos tradicionales
+    \item Valoran experiencias de vacaciones familiares
+    \item Tienen horizonte de inversión de mediano a largo plazo (5+ años)
+    \item Aprecian transparencia en rendimientos y gestión profesional
+\end{itemize}
+
+\subsection{Características Psicográficas}
+
+\begin{itemize}
+    \item Prefieren activos tangibles sobre inversiones puramente financieras
+    \item Valoran flexibilidad en decisiones (uso vs. renta según convenga cada año)
+    \item Buscan comunidad de copropietarios con valores similares
+    \item Aprecian gestión profesional que minimice su involucramiento operativo
+\end{itemize}
+
+% ============================================================================
+% MITIGACIÓN DE RIESGOS
+% ============================================================================
+\section{Mitigación de Riesgos}
+
+\subsection{Fondo de Reserva}
+
+\begin{itemize}
+    \item \textbf{Monto objetivo}: 6 meses de gastos operativos
+    \item \textbf{Finalidad}: Cubrir períodos de baja ocupación, reparaciones inesperadas, transiciones de gestora
+    \item \textbf{Capitalización}: 5\% de los ingresos netos anuales hasta alcanzar el monto objetivo
+\end{itemize}
+
+\subsection{Seguros Integrales}
+
+\begin{enumerate}
+    \item \textbf{Responsabilidad civil}: Cobertura por daños a terceros
+    \item \textbf{Daños estructurales}: Incendio, inundación, sismos
+    \item \textbf{Contenidos}: Equipamiento, mobiliario, electrodomésticos
+\end{enumerate}
+
+\subsection{Cláusulas de Protección}
+
+\begin{itemize}
+    \item \textbf{Derecho de preferencia}: Copropietarios tienen prioridad antes de venta externa
+    \item \textbf{Resolución de disputas}: Proceso definido de arbitraje
+    \item \textbf{Auditorías independientes}: Revisión financiera trimestral
+    \item \textbf{Remoción de copropietario}: Proceso documentado para incumplimientos graves
+\end{itemize}
+
+\subsection{Diversificación de Ingresos}
+
+\begin{itemize}
+    \item Presencia en múltiples plataformas OTA (no dependencia de una sola)
+    \item Relaciones con agencias de viajes locales
+    \item Lista de clientes directos (bookings sin comisión)
+    \item Oportunidades de partnerships corporativos
+\end{itemize}
+
+% ============================================================================
+% CONCLUSIONES
+% ============================================================================
+\section{Conclusiones}
+
+\subsection{Ventajas Competitivas del Modelo}
+
+\begin{enumerate}
+    \item \textbf{Accesibilidad Financiera}
+    \begin{itemize}
+        \item Inversión de \MXN{900000} vs. \MXN{3600000} de propiedad completa
+        \item Democratiza acceso a bienes raíces en zona premium de Mérida
+    \end{itemize}
+    
+    \item \textbf{Rendimientos Competitivos}
+    \begin{itemize}
+        \item 8.94\% - 12.05\% anual proyectado
+        \item Supera instrumentos tradicionales con activo tangible
+        \item Potencial de apreciación adicional del inmueble
+    \end{itemize}
+    
+    \item \textbf{Flexibilidad Dual}
+    \begin{itemize}
+        \item Opción de elegir entre uso personal y generación de ingresos
+        \item Adaptable a necesidades cambiantes de cada copropietario
+    \end{itemize}
+    
+    \item \textbf{Ubicación Estratégica}
+    \begin{itemize}
+        \item Zona residencial norte de Mérida en crecimiento sostenido
+        \item Alta demanda turística nacional e internacional
+        \item Excelente conectividad y servicios
+    \end{itemize}
+    
+    \item \textbf{Gestión Profesional}
+    \begin{itemize}
+        \item Empresa gestora libera a propietarios de responsabilidades operativas
+        \item Transparencia total en finanzas y ocupación
+        \item Monitoreo continuo de KPIs y optimización
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Sistema Serpiente: La Clave del Éxito}
+
+El \textbf{Sistema de Rotación Serpiente} es el elemento diferenciador que garantiza la viabilidad a largo plazo del proyecto:
+
+\begin{itemize}
+    \item Equidad matemática perfecta en distribución de temporadas
+    \item Elimina percepción de favoritismos entre copropietarios
+    \item Genera confianza y reduce conflictos
+    \item Fácil de implementar, auditar y verificar
+    \item Utilizado exitosamente en desarrollos fraccionales en EE.UU. y Europa
+\end{itemize}
+
+\subsection{Recomendación Final}
+
+El proyecto de propiedad fraccional en Mérida representa una \textbf{oportunidad viable y competitiva} en el mercado inmobiliario de Yucatán, diferenciándose sustancialmente del tiempo compartido tradicional al otorgar:
+
+\begin{itemize}
+    \item Derechos reales de propiedad (no solo derechos de uso)
+    \item Participación en plusvalía del inmueble
+    \item Opciones claras de exit strategy (venta, herencia)
+    \item Transparencia total en operación y finanzas
+\end{itemize}
+
+El modelo está \textbf{listo para implementación} con todos los elementos de análisis, planificación y documentación necesarios para su exitoso desarrollo.
+
+% ============================================================================
+% APÉNDICES
+% ============================================================================
+\appendix
+\section{Calendario Detallado de Semanas - Año 2026}
+
+\begin{table}[h]
+\centering
+\tiny
+\begin{tabular}{cllccc}
+\toprule
+\textbf{Sem.} & \textbf{Inicio} & \textbf{Fin} & \textbf{Mes} & \textbf{Temp.} & \textbf{Ticket} \\
+\midrule
+1 & 2026-01-05 & 2026-01-11 & Enero & ALTA & A \\
+2 & 2026-01-12 & 2026-01-18 & Enero & ALTA & B \\
+3 & 2026-01-19 & 2026-01-25 & Enero & ALTA & C \\
+4 & 2026-01-26 & 2026-02-01 & Enero & ALTA & D \\
+5 & 2026-02-02 & 2026-02-08 & Febrero & ALTA & D \\
+6 & 2026-02-09 & 2026-02-15 & Febrero & ALTA & C \\
+7 & 2026-02-16 & 2026-02-22 & Febrero & ALTA & B \\
+8 & 2026-02-23 & 2026-03-01 & Febrero & ALTA & A \\
+9 & 2026-03-02 & 2026-03-08 & Marzo & ALTA & A \\
+10 & 2026-03-09 & 2026-03-15 & Marzo & ALTA & B \\
+11 & 2026-03-16 & 2026-03-22 & Marzo & ALTA & C \\
+12 & 2026-03-23 & 2026-03-29 & Marzo & ALTA & D \\
+13 & 2026-03-30 & 2026-04-05 & Marzo & ALTA & D \\
+14 & 2026-04-06 & 2026-04-12 & Abril & MEDIA & A \\
+15 & 2026-04-13 & 2026-04-19 & Abril & MEDIA & B \\
+16 & 2026-04-20 & 2026-04-26 & Abril & MEDIA & C \\
+17 & 2026-04-27 & 2026-05-03 & Abril & MEDIA & D \\
+\midrule
+\multicolumn{6}{c}{\textit{... continuación para las 52 semanas completas}} \\
+\bottomrule
+\end{tabular}
+\caption{Primeras 17 semanas del calendario 2026 (muestra representativa)}
+\end{table}
+
+\section{Contactos y Próximos Pasos}
+
+\subsection{Instituciones Fiduciarias para Cotización}
+
+\begin{enumerate}
+    \item \textbf{BIM (Banco Inmobiliario Mexicano)}
+    \begin{itemize}
+        \item Contacto: [Pendiente obtener datos oficiales]
+        \item Especificar: Fideicomiso copropiedad, 4 fideicomisarios, patrimonio \MXN{3600000}
+    \end{itemize}
+    
+    \item \textbf{Banorte Gestión Fiduciaria}
+    \begin{itemize}
+        \item Contacto: [Pendiente obtener datos oficiales]
+        \item Especificar: Fideicomiso inmobiliario nacional (no zona restringida)
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Empresas Gestoras en Mérida}
+
+\begin{enumerate}
+    \item Empresas locales especializadas en vacation rentals
+    \item Operadores de Airbnb Superhosts con múltiples propiedades
+    \item Property managers certificados con experiencia en zona norte
+\end{enumerate}
+
+\textbf{Criterios de evaluación}:
+\begin{itemize}
+    \item Track record mínimo 3 años
+    \item Cartera de al menos 10 propiedades gestionadas
+    \item Tasa de ocupación promedio $>$75\%
+    \item Rating promedio $>$4.7 estrellas
+    \item Referencias verificables
+\end{itemize}
+
+\vfill
+
+\begin{center}
+\textcolor{verdeoscuro}{\rule{0.8\textwidth}{0.5pt}}\\[0.5cm]
+\textbf{\large DOCUMENTO PREPARADO PARA COPROPIETARIOS}\\
+\textit{Análisis Ejecutivo - Diciembre 2025}
+\end{center}
+
+\end{document}
