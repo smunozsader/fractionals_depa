@@ -1,0 +1,117 @@
+% CONTRATO DE FIDEICOMISO INMOBILIARIO - ARCHIVO PRINCIPAL
+% Compilar con XeLaTeX o LuaLaTeX para Times New Roman
+% Formato: Papel Legal, 12pt, Paquete Contract
+
+\documentclass[12pt]{article}
+
+% Papel Legal y márgenes
+\usepackage[
+  legalpaper,
+  left=3cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm
+]{geometry}
+
+% Soporte para español
+\usepackage[spanish,mexico]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Times New Roman
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage{newtxtext,newtxmath}
+\else
+  \usepackage{fontspec}
+  \setmainfont{Times New Roman}
+\fi
+
+% Interlineado
+\usepackage{setspace}
+\onehalfspacing
+
+% Comandos personalizados para formato jurídico mexicano
+\newcounter{clausenum}
+\newcommand{\Clause}[1]{%
+  \stepcounter{clausenum}%
+  \vspace{1.5em}%
+  \noindent\textbf{\large CLÁUSULA \Roman{clausenum}. \MakeUppercase{#1}}%
+  \vspace{0.5em}%
+  \addcontentsline{toc}{section}{Cláusula \Roman{clausenum}. #1}%
+  \par%
+}
+\newcommand{\SubClause}[1]{%
+  \vspace{1em}%
+  \noindent\textbf{#1}%
+  \vspace{0.3em}%
+  \par%
+}
+
+% Encabezado y pie de página
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small Contrato de Fideicomiso Inmobiliario}
+\rhead{\small Propiedad Fraccional Mérida}
+\cfoot{Página \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Tablas
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+% Enlaces
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+% Listas mejoradas
+\usepackage{enumitem}
+
+% Para líneas de firma
+\newcommand{\firmalinea}{\underline{\hspace{6cm}}}
+\newcommand{\espaciofirma}{\vspace{2.5em}}
+
+\begin{document}
+
+% === PORTADA ===
+\begin{center}
+  {\Large\bfseries CONTRATO DE CONSTITUCIÓN DE FIDEICOMISO INMOBILIARIO}\\[1em]
+  {\large PROPIEDAD FRACCIONAL MÉRIDA, YUCATÁN}\\[1.5em]
+  \rule{10cm}{0.5pt}\\[1em]
+  {\normalsize\itshape Documento de referencia: Proyecto de Propiedad Fraccional Mérida, Yucatán}\\[0.5em]
+  {\normalsize Fecha de celebración: 18 de diciembre de 2025}\\[0.5em]
+  {\normalsize Vigencia: 50 años conforme a la Ley de Inversión Extranjera}\\[1em]
+  \rule{10cm}{0.5pt}
+\end{center}
+
+\vspace{2em}
+
+% === TABLA DE CONTENIDO ===
+\tableofcontents
+\newpage
+
+% === SECCIONES MODULARES ===
+
+\input{sec_01_preambulo.tex}
+\input{sec_02_declaraciones.tex}
+\input{sec_03_objeto.tex}
+\input{sec_04_constitucion.tex}
+\input{sec_05_derechos_fiduciarios.tex}
+\input{sec_06_sistema_serpiente.tex}
+\input{sec_07_derechos_obligaciones.tex}
+\input{sec_08_administracion.tex}
+\input{sec_09_patrimonio.tex}
+\input{sec_10_reglamento.tex}
+\input{sec_11_disposiciones_finales.tex}
+\input{sec_12_firmas.tex}
+\input{sec_13_anexos.tex}
+
+\end{document}
