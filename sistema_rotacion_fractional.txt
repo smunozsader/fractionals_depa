@@ -1,0 +1,152 @@
+
+=================================================================
+    SISTEMA DE ROTACIÓN EQUITATIVA PARA PROPIEDAD FRACCIONAL
+           Departamento en Mérida, Yucatán (100m²)
+=================================================================
+
+RESPUESTA A TU PREGUNTA:
+------------------------
+¿Cómo dividir las 52 semanas de manera "salomónica" entre 4 tickets?
+
+SOLUCIÓN RECOMENDADA: Sistema de Rotación SERPIENTE (Zig-Zag)
+--------------------------------------------------------------
+
+Este sistema garantiza la distribución MÁS EQUITATIVA posible porque:
+
+1. INVIERTE el orden de asignación en cada ronda
+2. EQUILIBRA el acceso a temporadas altas, medias y bajas
+3. DISTRIBUYE las semanas más deseables de forma justa
+
+DISTRIBUCIÓN RESULTANTE:
+------------------------
+• Ticket A: 13 semanas (7 ALTA + 3 MEDIA + 3 BAJA)
+• Ticket B: 13 semanas (7 ALTA + 3 MEDIA + 3 BAJA)
+• Ticket C: 13 semanas (6 ALTA + 4 MEDIA + 3 BAJA)
+• Ticket D: 13 semanas (6 ALTA + 4 MEDIA + 3 BAJA)
+
+TEMPORADAS EN MÉRIDA:
+---------------------
+✓ ALTA (26 semanas): Diciembre-Marzo, Julio-Agosto
+  - Clima ideal (18-28°C)
+  - Mayor demanda turística
+  - Festividades y vacaciones
+
+✓ MEDIA (14 semanas): Abril, Mayo (parcial), Octubre-Noviembre
+  - Clima agradable
+  - Demanda moderada
+  - Buenos precios
+
+✓ BAJA (12 semanas): Mayo-Junio, Septiembre
+  - Temporada de lluvias
+  - Menor demanda
+  - Máximos descuentos
+
+CÓMO FUNCIONA EL SISTEMA SERPIENTE:
+------------------------------------
+Ronda 1: A → B → C → D (orden normal)
+Ronda 2: D → C → B → A (orden invertido)
+Ronda 3: A → B → C → D (orden normal)
+Ronda 4: D → C → B → A (orden invertido)
+...y así sucesivamente
+
+Esto garantiza que:
+• Nadie monopoliza las primeras posiciones
+• Todos tienen acceso balanceado a cada tipo de temporada
+• La rotación es PREDECIBLE y TRANSPARENTE
+
+REGLAS OPERATIVAS SUGERIDAS:
+-----------------------------
+
+1. DERECHOS DE USO:
+   - Cada propietario tiene derecho a usar el inmueble hasta 13 semanas/año
+   - Las semanas asignadas son FIJAS según el calendario anual
+   - Se puede intercambiar semanas entre propietarios con mutuo acuerdo
+
+2. OPCIÓN DE USUFRUCTO vs. RENDIMIENTOS:
+
+   A) Si el propietario USA el inmueble:
+      ✗ Pierde el derecho a rendimientos de ESA semana específica
+      ✓ Disfruta la propiedad sin costo adicional
+      ✓ Solo paga cuota de mantenimiento proporcional
+
+   B) Si el propietario NO USA el inmueble:
+      ✓ Su semana entra al pool de rentas
+      ✓ Recibe rendimiento proporcional al finalizar el año
+      ✓ Cero responsabilidad operativa
+
+3. DISTRIBUCIÓN DE RENDIMIENTOS:
+   - Los ingresos se calculan al cierre del año fiscal
+   - Se deducen gastos operativos (mantenimiento, servicios, administración)
+   - El ingreso neto se divide entre los tickets QUE NO USARON
+   - Pago: Enero del año siguiente
+
+4. RESERVACIÓN DEL USO:
+   - Los propietarios deben notificar su intención de uso con 60 días de anticipación
+   - Deadline: 1 de noviembre para el año siguiente
+   - Las semanas no reclamadas se rentan automáticamente
+
+5. ADMINISTRACIÓN:
+   - Contratar empresa gestora profesional (Airbnb, Booking, o local)
+   - Cuota de mantenimiento mensual fija por propietario
+   - Reuniones trimestrales para revisión de resultados
+
+ESCENARIOS DE RENDIMIENTO PROYECTADOS:
+---------------------------------------
+Basados en tarifas de mercado Mérida 2025:
+• Temporada ALTA: $2,500 MXN/noche
+• Temporada MEDIA: $1,800 MXN/noche
+• Temporada BAJA: $1,200 MXN/noche
+
+CONSERVADOR (ocupación: 70% alta, 50% media, 40% baja)
+→ Rendimiento: $80,464 MXN/ticket/año = 8.94% anual
+
+MODERADO (ocupación: 80% alta, 65% media, 50% baja)
+→ Rendimiento: $95,231 MXN/ticket/año = 10.58% anual
+
+OPTIMISTA (ocupación: 90% alta, 75% media, 60% baja)
+→ Rendimiento: $108,410 MXN/ticket/año = 12.05% anual
+
+*Nota: Rendimientos asumen que el propietario NO usa ninguna semana.
+Si usa semanas, el rendimiento disminuye proporcionalmente.
+
+EJEMPLO PRÁCTICO:
+-----------------
+Si el Propietario del Ticket A decide:
+• Usar 3 semanas (2 ALTA + 1 MEDIA) para vacaciones familiares
+• Rentar sus otras 10 semanas
+
+Entonces:
+• Disfruta: 21 días de vacaciones en su propiedad
+• Renuncia: a rendimientos de esas 3 semanas (~$30K-35K MXN)
+• Recibe: rendimientos de las 10 semanas restantes (~$60K-65K MXN)
+
+VENTAJAS DE ESTE MODELO:
+-------------------------
+✓ Inversión accesible: $900K vs. $3.6M (propiedad completa)
+✓ Ingresos pasivos: 8-12% anual si no se usa
+✓ Flexibilidad: opción de uso o renta
+✓ Diversificación: no todo el capital en un activo
+✓ Sin responsabilidad operativa diaria
+✓ Acceso a propiedad en zona prime de Mérida
+
+ESTRUCTURA LEGAL RECOMENDADA:
+-----------------------------
+• Fideicomiso inmobiliario
+• 4 derechos fiduciarios (uno por ticket)
+• Cada derecho incluye:
+  - Porcentaje de propiedad (25%)
+  - Derecho de uso (13 semanas específicas)
+  - Derecho a rendimientos (proporcional)
+  - Derecho de venta/transferencia
+
+PRÓXIMOS PASOS PARA TU PERPLEXITY LAB:
+--------------------------------------
+1. Validar tarifas de renta con comparables en la zona
+2. Cotizar empresas gestoras (fee típico: 15-20% de ingresos)
+3. Estimar gastos operativos reales (mantenimiento, servicios, impuestos)
+4. Estructurar fideicomiso con notario especializado
+5. Crear reglamento interno detallado
+6. Diseñar materiales de venta (pitch deck, proyecciones)
+7. Establecer proceso de onboarding de inversionistas
+
+=================================================================

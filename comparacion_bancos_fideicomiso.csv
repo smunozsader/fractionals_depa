@@ -1,0 +1,18 @@
+﻿Banco,Costo_Constitucion_USD,Anualidad_Primera_USD,Total_Inicial_USD,Comision_Anual_%,Especialidad,Ventaja_Clave,Presencia_Merida
+"BIM
+(Banco Inmobiliario Mexicano)",Variable*,Variable*,Consultar,1.46% - 5.25%,"Fideicomisos inmobiliarios
+y desarrollo","Tarifas MÁS BAJAS del mercado
+Especializado en desarrollo",Sí - especializada
+"Banorte
+(Gestión Fiduciaria)",464,464,928,Fija (sin incrementos),"Fideicomisos generales
+y zona restringida","Anualidad FIJA sin incrementos
+Presencia Mérida",Sí - amplia
+BBVA,Variable**,Variable**,Consultar,Variable,"Banca patrimonial
+y zona restringida","Red nacional amplia
+Tecnología digital",Sí - amplia
+Scotiabank,Variable**,Variable**,Consultar,Variable,"Banca corporativa
+y patrimonial","Atención personalizada
+Productos corporativos",Sí - moderada
+Monex,450,450,900,Variable,"Zona restringida
+extranjeros","Competitivo para extranjeros
+Proceso ágil",Limitada

@@ -1,0 +1,443 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║              SISTEMA DE ROTACIÓN SERPIENTE: GUÍA COMPLETA                   ║
+║                      Para Propiedad Fraccional 4 Tickets                    ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════
+I. ¿POR QUÉ EL SISTEMA SERPIENTE ES SUPERIOR?
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 EL PROBLEMA QUE RESUELVE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Cuando tienes 52 semanas y 4 propietarios, matemáticamente cada uno
+recibe 13 semanas. PERO no todas las semanas valen igual:
+
+   • Temporada ALTA (26 semanas): Navidad, Semana Santa, Verano
+     → Mayor demanda, mejores tarifas, mejor clima
+
+   • Temporada MEDIA (14 semanas): Primavera/Otoño
+     → Demanda moderada, clima agradable
+
+   • Temporada BAJA (12 semanas): Lluvias
+     → Menor demanda, descuentos
+
+EL DESAFÍO:
+¿Cómo asegurar que TODOS tengan acceso justo a las mejores semanas?
+
+
+❌ SISTEMA SIMPLE (NO RECOMENDADO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Asignación: A, B, C, D, A, B, C, D, A, B, C, D... (rotación fija)
+
+Resultado:
+   Ticket A: Semanas 1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49
+   Ticket B: Semanas 2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50
+   Ticket C: Semanas 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51
+   Ticket D: Semanas 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52
+
+PROBLEMA:
+   • Ticket A SIEMPRE elige primero → Ventaja permanente
+   • Ticket D SIEMPRE elige último → Desventaja permanente
+   • Si hay semanas ultra-premium (Año Nuevo, Navidad), A las monopoliza
+   • Genera percepción de INJUSTICIA
+
+
+✅ SISTEMA SERPIENTE (RECOMENDADO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Asignación: A, B, C, D, D, C, B, A, A, B, C, D, D, C, B, A...
+            └─────────┘ └─────────┘ └─────────┘ └─────────┘
+             Ronda 1     Ronda 2     Ronda 3     Ronda 4
+            (adelante)   (atrás)    (adelante)   (atrás)
+
+VENTAJAS:
+
+1. ROTACIÓN DEL ORDEN
+   En rondas impares: A elige 1º, D elige 4º
+   En rondas pares: D elige 1º, A elige 4º
+   → NADIE tiene ventaja permanente
+
+2. EQUIDAD MATEMÁTICA
+   Cada propietario elige primero: 3-4 veces (de 13 rondas)
+   Cada propietario elige último: 3-4 veces
+   → Distribución PERFECTAMENTE balanceada
+
+3. COMPENSACIÓN AUTOMÁTICA
+   Si en una ronda te toca último, en la siguiente te toca primero
+   → Sistema auto-correctivo
+
+4. DISTRIBUCIÓN GEOGRÁFICA TEMPORAL
+   Todos tienen semanas distribuidas a lo largo del año
+   No concentradas en un solo bloque
+   → Flexibilidad para planear vacaciones
+
+
+═══════════════════════════════════════════════════════════════════════════════
+II. CÓMO FUNCIONA PASO A PASO
+═══════════════════════════════════════════════════════════════════════════════
+
+📅 EJEMPLO PRÁCTICO: ASIGNACIÓN DE TEMPORADA ALTA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Las 26 semanas de temporada ALTA se reparten así:
+
+RONDA 1 (semanas 1-4 de ALTA):
+   Semana 1 → Ticket A
+   Semana 2 → Ticket B
+   Semana 3 → Ticket C
+   Semana 4 → Ticket D
+
+RONDA 2 (semanas 5-8 de ALTA) - ORDEN INVERTIDO:
+   Semana 5 → Ticket D  ← ¡Ahora D elige primero!
+   Semana 6 → Ticket C
+   Semana 7 → Ticket B
+   Semana 8 → Ticket A  ← A ahora elige último
+
+RONDA 3 (semanas 9-12 de ALTA) - VUELVE AL ORDEN NORMAL:
+   Semana 9 → Ticket A
+   Semana 10 → Ticket B
+   Semana 11 → Ticket C
+   Semana 12 → Ticket D
+
+RONDA 4 (semanas 13-16 de ALTA) - INVERTIDO:
+   Semana 13 → Ticket D
+   Semana 14 → Ticket C
+   Semana 15 → Ticket B
+   Semana 16 → Ticket A
+
+RONDA 5 (semanas 17-20 de ALTA):
+   Semana 17 → Ticket A
+   Semana 18 → Ticket B
+   Semana 19 → Ticket C
+   Semana 20 → Ticket D
+
+RONDA 6 (semanas 21-24 de ALTA) - INVERTIDO:
+   Semana 21 → Ticket D
+   Semana 22 → Ticket C
+   Semana 23 → Ticket B
+   Semana 24 → Ticket A
+
+RONDA 7 (semanas 25-26 de ALTA - solo 2 semanas):
+   Semana 25 → Ticket A
+   Semana 26 → Ticket B
+
+RESULTADO FINAL EN TEMPORADA ALTA:
+   Ticket A: 7 semanas (rondas impares favorecen ligeramente)
+   Ticket B: 7 semanas
+   Ticket C: 6 semanas
+   Ticket D: 6 semanas
+
+La diferencia de 1 semana es MÍNIMA e inevitable matemáticamente
+(26 semanas / 4 = 6.5 semanas por ticket)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+III. IMPLEMENTACIÓN PRÁCTICA
+═══════════════════════════════════════════════════════════════════════════════
+
+🛠️ CÓMO PROGRAMAR EL CALENDARIO ANUAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PASO 1: Clasificar las 52 semanas por temporada
+   • Identificar cuáles son ALTA (26)
+   • Identificar cuáles son MEDIA (14)
+   • Identificar cuáles son BAJA (12)
+
+PASO 2: Aplicar serpiente a CADA grupo de temporada
+   Esto asegura distribución equitativa DENTRO de cada tipo
+
+PASO 3: Crear calendario maestro
+   Combinar las 3 listas en un calendario anual completo
+
+PASO 4: Publicar con anticipación
+   Notificar a todos los copropietarios el 1 de noviembre
+   para el año siguiente
+
+
+📋 REGLAS DE IMPLEMENTACIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CALENDARIO FIJO ANUAL
+   Las semanas asignadas son FIJAS para ese año calendario
+   No se pueden cambiar unilateralmente
+
+2. ROTACIÓN ANUAL DEL ORDEN INICIAL
+   Para evitar que A siempre inicie el ciclo:
+
+   Año 1: Inicia A → B → C → D
+   Año 2: Inicia B → C → D → A
+   Año 3: Inicia C → D → A → B
+   Año 4: Inicia D → A → B → C
+   Año 5: Vuelve a A...
+
+   Esto garantiza equidad multi-anual
+
+3. INTERCAMBIOS PERMITIDOS
+   Los propietarios pueden intercambiar semanas entre sí
+   mediante acuerdo documentado por escrito
+
+   Ejemplo:
+   Ticket A tiene Semana 10 (marzo) pero prefiere Semana 30 (julio)
+   Ticket C tiene Semana 30 pero necesita Semana 10
+   → Pueden intercambiar con consentimiento mutuo
+
+   El intercambio NO afecta el calendario del año siguiente
+
+4. SEMANAS NO USADAS
+   Si un propietario no notifica uso 60 días antes:
+   • Esa semana entra automáticamente al pool de rentas
+   • El propietario recibe rendimientos de esa semana
+   • NO puede reclamarla después
+
+
+═══════════════════════════════════════════════════════════════════════════════
+IV. COMPARACIÓN VISUAL CON OTROS SISTEMAS
+═══════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    TABLA COMPARATIVA DE SISTEMAS                            │
+├──────────────┬──────────────────┬──────────────────┬──────────────────────┤
+│   CRITERIO   │  ROTACIÓN SIMPLE │  SORTEO ALEATORIO│  SERPIENTE (ZIG-ZAG)│
+├──────────────┼──────────────────┼──────────────────┼──────────────────────┤
+│ Equidad      │ Media            │ Baja (suerte)    │ ★★★★★ ALTA          │
+│              │ A tiene ventaja  │ Variable año/año │ Matemática perfecta  │
+├──────────────┼──────────────────┼──────────────────┼──────────────────────┤
+│ Predeci-     │ ★★★★★ Alta       │ ★ Baja           │ ★★★★★ Alta          │
+│ bilidad      │ Muy clara        │ Cambia c/año     │ Lógica transparente  │
+├──────────────┼──────────────────┼──────────────────┼──────────────────────┤
+│ Percepción   │ Media            │ Baja             │ ★★★★★ MUY ALTA      │
+│ de justicia  │ Algunos se       │ Puede haber      │ Todos ven equidad    │
+│              │ sienten en       │ "mala suerte"    │ objetiva             │
+│              │ desventaja       │                  │                      │
+├──────────────┼──────────────────┼──────────────────┼──────────────────────┤
+│ Conflictos   │ Medios           │ Altos            │ ★★★★★ MÍNIMOS       │
+│ potenciales  │ A vs. D disputan │ Reclamos por     │ Sistema justo        │
+│              │                  │ sorteo           │ elimina quejas       │
+├──────────────┼──────────────────┼──────────────────┼──────────────────────┤
+│ Facilidad    │ ★★★★★ Muy fácil  │ ★★ Compleja      │ ★★★★ Fácil          │
+│ implementar  │ A-B-C-D repetir  │ Necesita proceso │ Lógica clara         │
+│              │                  │ anual de sorteo  │                      │
+├──────────────┼──────────────────┼──────────────────┼──────────────────────┤
+│ Transparencia│ Alta             │ Media            │ ★★★★★ MUY ALTA      │
+│              │                  │ Depende de       │ Auditable fácilmente │
+│              │                  │ confianza sorteo │                      │
+├──────────────┼──────────────────┼──────────────────┼──────────────────────┤
+│ Distribución │ Desigual         │ Impredecible     │ ★★★★★ EQUILIBRADA   │
+│ temporal     │ Algunos tienen   │ Puede concentrar │ Todos tienen semanas │
+│              │ bloques juntos   │ en períodos      │ distribuidas en año  │
+├──────────────┼──────────────────┼──────────────────┼──────────────────────┤
+│ RECOMENDACIÓN│ ★★★              │ ★★               │ ★★★★★               │
+└──────────────┴──────────────────┴──────────────────┴──────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+V. CASOS DE USO Y EJEMPLOS REALES
+═══════════════════════════════════════════════════════════════════════════════
+
+🌟 EJEMPLO 1: Familia con hijos en edad escolar
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ticket B tiene asignadas:
+   • 2 semanas en julio (vacaciones de verano)
+   • 2 semanas en diciembre (Navidad)
+   • 1 semana en marzo (Semana Santa parcial)
+   • 2 semanas en octubre (puentes)
+   • 6 semanas en mayo-junio y septiembre (temporada baja)
+
+ESTRATEGIA:
+   • USA las 5 semanas premium para vacaciones familiares
+   • RENTA las 8 semanas restantes para generar ingresos
+
+RESULTADO:
+   • 35 días de vacaciones familiares al año
+   • ~$60,000 - $75,000 MXN de rendimientos
+   • ROI total: ~8% monetario + valor de uso
+
+
+🌟 EJEMPLO 2: Inversionista puro
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ticket C tiene asignadas:
+   • 6 semanas ALTA
+   • 4 semanas MEDIA
+   • 3 semanas BAJA
+
+ESTRATEGIA:
+   • NO usa NINGUNA semana
+   • Todas las 13 semanas van al pool de rentas
+
+RESULTADO:
+   • $95,231 MXN de rendimiento anual (escenario moderado)
+   • 10.58% ROI anual
+   • Cero involucramiento operativo
+
+
+🌟 EJEMPLO 3: Profesionista flexible
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ticket D tiene asignadas semanas distribuidas todo el año
+
+ESTRATEGIA:
+   • Usa 1-2 semanas por trimestre según agenda
+   • Renta el resto
+
+VENTAJA DEL SISTEMA SERPIENTE:
+   Al tener semanas distribuidas (no concentradas en un bloque),
+   puede elegir cuándo viajar según su calendario laboral
+
+   Año 1: Usa semanas en febrero, mayo, agosto, noviembre
+   Año 2: Usa semanas en enero, abril, julio, octubre
+   → Máxima flexibilidad
+
+
+═══════════════════════════════════════════════════════════════════════════════
+VI. IMPLEMENTACIÓN TÉCNICA
+═══════════════════════════════════════════════════════════════════════════════
+
+💻 ALGORITMO DEL SISTEMA SERPIENTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+En pseudocódigo:
+
+propietarios = [A, B, C, D]
+direccion_adelante = True
+índice = 0
+
+Para cada semana en lista_de_semanas:
+    Si direccion_adelante:
+        propietario_actual = propietarios[índice]
+    Sino:
+        propietario_actual = propietarios[largo - 1 - índice]
+
+    Asignar semana a propietario_actual
+
+    índice = índice + 1
+
+    Si índice == largo_propietarios:
+        índice = 0
+        direccion_adelante = NO direccion_adelante
+
+Este algoritmo simple garantiza la rotación serpiente perfecta.
+
+
+📊 VALIDACIÓN DE EQUIDAD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Después de ejecutar el algoritmo, verificar:
+
+✓ Cada ticket tiene exactamente 13 semanas
+✓ Tickets A y B tienen 7 semanas ALTA
+✓ Tickets C y D tienen 6 semanas ALTA
+✓ Todos tienen 3 semanas BAJA
+✓ Diferencia máxima en MEDIA es de 1 semana
+✓ Semanas distribuidas a lo largo del año (no bloques)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+VII. RESPUESTAS A PREGUNTAS FRECUENTES
+═══════════════════════════════════════════════════════════════════════════════
+
+❓ ¿Por qué A y B tienen 7 semanas ALTA y C y D solo 6?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+R: Es matemáticamente inevitable. 26 semanas ALTA / 4 tickets = 6.5
+   El sistema serpiente asegura que esta pequeña diferencia se
+   COMPENSE con 1 semana adicional de temporada MEDIA para C y D.
+
+   Además, el próximo año se rota el orden inicial, entonces
+   C y D tendrán ventaja en el primer ciclo.
+
+
+❓ ¿Qué pasa si quiero intercambiar semanas con otro propietario?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+R: PERMITIDO. Dos o más propietarios pueden intercambiar semanas
+   mediante acuerdo por escrito notificado al fiduciario.
+
+   Condiciones:
+   • Ambas partes deben estar de acuerdo
+   • Documentar el intercambio formalmente
+   • Notificar a empresa gestora y banco fiduciario
+   • El intercambio aplica solo para ese año específico
+   • No afecta el calendario del año siguiente
+
+
+❓ ¿Puedo "vender" mis semanas a otro copropietario permanentemente?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+R: NO directamente. Pero puedes:
+
+   OPCIÓN 1: Vender tu derecho fiduciario completo
+   Si vendes tu participación en el fideicomiso, el nuevo propietario
+   hereda todas tus 13 semanas anuales según el sistema serpiente.
+
+   OPCIÓN 2: Intercambio perpetuo
+   Establecer un "intercambio perpetuo" documentado ante el fiduciario
+   donde cada año intercambias ciertas semanas con otro propietario.
+
+
+❓ ¿Cómo se decide el orden inicial (quién es A, B, C, D)?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+R: TRES OPCIONES JUSTAS:
+
+   1. ORDEN DE COMPRA: Quien compró primero es A
+      Simple y objetivo basado en cronología
+
+   2. SORTEO: Sorteo público ante notario
+      Máxima transparencia e igualdad de oportunidades
+
+   3. ROTACIÓN ANUAL OBLIGATORIA: Todos son A en algún momento
+      Año 1: Orden A-B-C-D
+      Año 2: Orden B-C-D-A
+      Año 3: Orden C-D-A-B
+      Año 4: Orden D-A-B-C
+      → En 4 años, todos fueron A, B, C y D
+
+
+❓ ¿Qué pasa en años bisiestos (53 semanas)?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+R: La semana 53 se maneja de dos formas:
+
+   OPCIÓN 1: No se asigna a nadie
+   Va directamente al pool de rentas y los ingresos se distribuyen
+   equitativamente entre los 4 tickets.
+
+   OPCIÓN 2: Rotación especial
+   Año bisiesto 1: Semana 53 para Ticket A
+   Año bisiesto 2: Semana 53 para Ticket B
+   Y así sucesivamente...
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║  🎯 CONCLUSIÓN: POR QUÉ EL SISTEMA SERPIENTE ES LA MEJOR OPCIÓN            ║
+║                                                                              ║
+║  1. EQUIDAD MATEMÁTICA PERFECTA                                            ║
+║     No hay favoritismos, todo es objetivo y demostrable                     ║
+║                                                                              ║
+║  2. ELIMINA CONFLICTOS                                                      ║
+║     Cuando todos ven que el sistema es justo, no hay quejas                 ║
+║                                                                              ║
+║  3. TRANSPARENCIA TOTAL                                                     ║
+║     Cualquiera puede auditar y verificar la distribución                    ║
+║                                                                              ║
+║  4. FLEXIBILIDAD TEMPORAL                                                   ║
+║     Todos tienen semanas distribuidas en el año, no bloques                 ║
+║                                                                              ║
+║  5. IMPLEMENTACIÓN SIMPLE                                                   ║
+║     Un algoritmo sencillo que cualquier Excel puede ejecutar                ║
+║                                                                              ║
+║  6. RESPALDO LEGAL SÓLIDO                                                   ║
+║     Se documenta en el contrato del fideicomiso, es vinculante              ║
+║                                                                              ║
+║  ✅ Es el sistema que usan desarrollos fraccionales exitosos en USA        ║
+║     y Europa por estas mismas razones                                       ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
