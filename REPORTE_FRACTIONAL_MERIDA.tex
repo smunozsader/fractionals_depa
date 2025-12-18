@@ -53,6 +53,11 @@
 \usepackage[hidelinks,colorlinks=true,linkcolor=verdeoscuro,urlcolor=turquesa,citecolor=turquesa]{hyperref}
 
 % Cajas y destacados (cargar DESPUÉS de hyperref)
+% Suprimir salida de comandos problemáticos de tcolorbox
+\makeatletter
+\providecommand\NewStructureName[1]{}
+\providecommand\AssignStructureRole[2]{}
+\makeatother
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
 
@@ -258,7 +263,7 @@ El modelo ofrece tres opciones de aprovechamiento según las necesidades de cada
     \begin{itemize}
         \item Disfrute: 91 días/año de vacaciones
         \item Valor de uso: $\sim$\MXN{180000} - \MXN{230000} en hospedaje equivalente
-        \item ROI indirecto: 20-25\% en valor de uso vs. hoteles
+        \item Rendimiento indirecto: 20-25\% en valor de uso vs. hoteles
     \end{itemize}
 \end{enumerate}
 
@@ -531,7 +536,7 @@ Se presentan tres escenarios con diferentes niveles de ocupación para evaluar e
 \small
 \begin{tabularx}{\textwidth}{Xcccccc}
 \toprule
-\textbf{Escenario} & \textbf{Ocup. ALTA} & \textbf{Ocup. MEDIA} & \textbf{Ocup. BAJA} & \textbf{Ing. Brutos} & \textbf{Ing. Netos} & \textbf{ROI} \\
+\textbf{Escenario} & \textbf{Ocup. ALTA} & \textbf{Ocup. MEDIA} & \textbf{Ocup. BAJA} & \textbf{Ing. Brutos} & \textbf{Ing. Netos} & \textbf{Rendimiento} \\
 \midrule
 Conservador & 70\% & 50\% & 40\% & \MXN{447020} & \MXN{321854} & \textbf{8.94\%} \\
 Moderado & 80\% & 65\% & 50\% & \MXN{529060} & \MXN{380923} & \textbf{10.58\%} \\
@@ -926,7 +931,7 @@ Los intercambios de semanas están \textbf{permitidos} bajo estas condiciones:
 En años bisiestos (53 semanas), existen dos opciones:
 
 \begin{enumerate}
-    \item \textbf{Opción 1 - Pool común}: La semana 53 se renta automáticamente y el ingreso se divide equitativamente entre los 4 tickets
+    \item \textbf{Opción 1 - Fondo común}: La semana 53 se renta automáticamente y el ingreso se divide equitativamente entre los 4 tickets
     \item \textbf{Opción 2 - Rotación}: Año 1 $\rightarrow$ Ticket A, Año 2 $\rightarrow$ Ticket B, Año 3 $\rightarrow$ Ticket C, Año 4 $\rightarrow$ Ticket D
 \end{enumerate}
 
@@ -1206,6 +1211,105 @@ Las proyecciones financieras, análisis de mercado y marco legal presentados en 
     \item Rating promedio $>$4.7 estrellas
     \item Referencias verificables
 \end{itemize}
+
+\newpage
+\section{Glosario de Términos Financieros e Inmobiliarios}
+
+\subsection{Términos Financieros}
+
+\begin{description}[leftmargin=4cm,style=nextline]
+    \item[Rendimiento] Ganancia o beneficio que produce una inversión en un periodo determinado, expresado usualmente como porcentaje anual. En este proyecto, se refiere a los ingresos por renta distribuidos a los copropietarios.
+    
+    \item[TIR (Tasa Interna de Retorno)] Métrica financiera que indica la rentabilidad de un proyecto considerando el valor del dinero en el tiempo. Equivale a la tasa de descuento que hace que el VPN sea igual a cero.
+    
+    \item[Retorno de Inversión] Sinónimo de rendimiento. Relación entre el beneficio obtenido y el capital invertido, expresado como porcentaje.
+    
+    \item[VPN (Valor Presente Neto)] Valor presente de los flujos de efectivo futuros de una inversión, descontados a una tasa específica, menos la inversión inicial.
+    
+    \item[Flujo de Efectivo] Movimiento de entrada y salida de dinero en un periodo determinado. En este contexto, incluye ingresos por renta menos gastos operativos.
+    
+    \item[Tasa de Ocupación] Porcentaje del tiempo que la propiedad está rentada versus el tiempo total disponible. Métrica clave para proyectar ingresos.
+    
+    \item[Punto de Equilibrio] Nivel de ocupación o ingresos necesario para cubrir exactamente todos los gastos operativos, sin ganancias ni pérdidas.
+    
+    \item[Capitalización] Proceso de reinvertir ganancias o constituir un fondo. En el proyecto, se refiere al fondo de reserva constituido con 5\% de utilidades netas anuales.
+\end{description}
+
+\subsection{Términos Inmobiliarios y Legales}
+
+\begin{description}[leftmargin=4cm,style=nextline]
+    \item[Fideicomiso] Figura jurídica donde un fiduciario (banco) administra un patrimonio (la propiedad) en beneficio de fideicomisarios (los copropietarios), según instrucciones del fideicomitente.
+    
+    \item[Fideicomisario] Persona que tiene derechos sobre el patrimonio del fideicomiso. En este proyecto, cada uno de los 4 copropietarios que posee un ticket.
+    
+    \item[Fiduciario] Institución bancaria que administra formalmente el patrimonio del fideicomiso y ejecuta las instrucciones del reglamento interno.
+    
+    \item[Usufructo] Derecho de usar y disfrutar de un bien ajeno con la obligación de conservarlo. Los copropietarios tienen usufructo sobre la propiedad durante sus semanas asignadas.
+    
+    \item[Copropietario] Persona que posee una fracción de la propiedad junto con otros propietarios. En el modelo, cada ticket representa 25\% de participación patrimonial.
+    
+    \item[Copropiedad] Régimen de propiedad donde varias personas tienen derechos sobre un mismo bien inmueble en proporciones definidas.
+    
+    \item[Ticket/Paquete] Unidad de participación fraccional que otorga 25\% de derechos patrimoniales y 13 semanas de uso anual.
+    
+    \item[Reglamento Interno] Documento legal que establece las reglas de operación, derechos y obligaciones de los copropietarios en el fideicomiso.
+    
+    \item[Derecho de Preferencia] También llamado "derecho de tanto". Prerrogativa de los copropietarios actuales para adquirir un ticket antes de que se venda a terceros.
+    
+    \item[Predial] Impuesto sobre la propiedad inmobiliaria, pagado anualmente al municipio. En Mérida se calcula sobre el valor catastral del inmueble.
+\end{description}
+
+\subsection{Términos Operativos del Proyecto}
+
+\begin{description}[leftmargin=4cm,style=nextline]
+    \item[Temporada Alta] Periodo de 26 semanas (Dic-Mar, Jul-Ago) con mayor demanda turística, mejores condiciones climáticas y tarifas máximas de renta.
+    
+    \item[Temporada Media] Periodo de 14 semanas (Abr-May, Oct-Nov) con demanda moderada y tarifas intermedias.
+    
+    \item[Temporada Baja] Periodo de 12 semanas (finales May, Jun, Sep) con menor demanda, época de lluvias y tarifas reducidas.
+    
+    \item[Sistema Serpiente] Método de distribución de semanas que invierte el orden de asignación en cada ronda (A-B-C-D, luego D-C-B-A), garantizando equidad entre copropietarios.
+    
+    \item[Rotación Anual] Cambio del orden inicial del sistema serpiente cada año para que ningún ticket tenga ventaja permanente a largo plazo.
+    
+    \item[Pax] Abreviatura del latín \textit{pax} (paz), utilizada en hotelería para indicar número de personas. La propiedad tiene capacidad de 4 pax.
+    
+    \item[Property Manager] Empresa o persona responsable de la gestión operativa de la propiedad: renta, mantenimiento, limpieza, atención a huéspedes.
+    
+    \item[OTA (Online Travel Agency)] Plataformas digitales de reservación turística como Airbnb, Booking.com, VRBO, Expedia, etc.
+    
+    \item[Tarifa Nocturna] Precio de renta por cada noche de hospedaje. Varía según temporada y demanda.
+    
+    \item[Check-in/Check-out] Horarios de entrada y salida de huéspedes. Estándar en Mérida: entrada 3pm, salida 11am.
+    
+    \item[Fondo de Reserva] Capital acumulado (equivalente a 6 meses de gastos operativos) para cubrir emergencias, reparaciones mayores o periodos de baja ocupación.
+    
+    \item[Gastos Operativos] Costos recurrentes de mantenimiento, servicios, comisiones, impuestos y administración de la propiedad. Proyectados en 28\% de ingresos brutos.
+    
+    \item[Distribución Proporcional] Método de reparto de utilidades donde cada copropietario recibe rendimientos solo por las semanas que efectivamente se rentaron de su ticket.
+    
+    \item[Semana 53] Semana adicional que ocurre en años bisiestos o ajustes de calendario. Se renta automáticamente y el ingreso se divide entre los 4 tickets.
+\end{description}
+
+\subsection{Acrónimos y Abreviaturas}
+
+\begin{description}[leftmargin=4cm,style=nextline]
+    \item[MXN] Peso mexicano (ISO 4217: MXN). Moneda de curso legal en México.
+    
+    \item[USD] Dólar estadounidense (ISO 4217: USD).
+    
+    \item[m²] Metro cuadrado, unidad de superficie de construcción.
+    
+    \item[SAT] Servicio de Administración Tributaria, autoridad fiscal mexicana.
+    
+    \item[PROFECO] Procuraduría Federal del Consumidor, organismo de protección al consumidor en México.
+    
+    \item[RFC] Registro Federal de Contribuyentes, clave fiscal única de personas físicas y morales en México.
+    
+    \item[NOM-029] Norma Oficial Mexicana que regula servicios de tiempo compartido.
+    
+    \item[CDMX] Ciudad de México (antes Distrito Federal).
+\end{description}
 
 \vfill
 

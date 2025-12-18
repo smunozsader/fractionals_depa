@@ -69,17 +69,17 @@ This alternating order system guarantees maximum equity:
 1. **Conservative** (70% high / 50% medium / 40% low occupancy):
    - Gross Income: $447,020 MXN/year
    - Net Income: $321,854 MXN/year
-   - Per Ticket: $80,464 MXN (8.94% ROI)
+   - Per Ticket: $80,464 MXN (8.94% annual return)
 
 2. **Moderate** (80% high / 65% medium / 50% low occupancy):
    - Gross Income: $529,060 MXN/year
    - Net Income: $380,923 MXN/year
-   - Per Ticket: $95,231 MXN (10.58% ROI)
+   - Per Ticket: $95,231 MXN (10.58% annual return)
 
 3. **Optimistic** (90% high / 75% medium / 60% low occupancy):
    - Gross Income: $602,280 MXN/year
    - Net Income: $433,642 MXN/year
-   - Per Ticket: $108,410 MXN (12.05% ROI)
+   - Per Ticket: $108,410 MXN (12.05% annual return)
 
 **Operational Expense Categories** (~28% of gross):
 - Property management fee (15-20% of gross)
@@ -99,15 +99,15 @@ This alternating order system guarantees maximum equity:
 
 ### Owner Rights Management
 **Three Usage Models per Owner**:
-1. **Pure Investment**: Rent all 13 weeks → Full ROI (8.94%-12.05% annually)
+1. **Pure Investment**: Rent all 13 weeks → Full annual return (8.94%-12.05% annually)
 2. **Mixed Use**: Use some weeks, rent others → Proportional income
-3. **Pure Personal Use**: Use all 13 weeks → No cash income but ~$180,000-$230,000 MXN value equivalent (20-25% indirect ROI)
+3. **Pure Personal Use**: Use all 13 weeks → No cash income but ~$180,000-$230,000 MXN value equivalent (20-25% indirect return)
 
 **Reservation Process**:
 - Annual calendar published November 1 for following year
 - Owners must notify intent to use assigned weeks **60 days in advance**
 - Deadline: November 1 of prior year for full-year planning
-- Unclaimed weeks (not notified by deadline) → Automatically enter rental pool
+- Unclaimed weeks (not notified by deadline) → Automatically enter rental inventory (bolsa de rentas)
 - Late claims not accepted after deadline
 
 **Week Exchanges** (permitted between owners):
@@ -123,8 +123,15 @@ This alternating order system guarantees maximum equity:
 ## Domain-Specific Terminology
 - **Paquete/Ticket**: Fractional ownership package (13 weeks)
 - **Usufructo**: Right to use the property
-- **Rendimiento**: Annual return/yield from rental income
+- **Rendimiento**: Annual return/yield from rental income (NEVER use "ROI" - always use Spanish terms)
+- **Retorno de Inversión**: Return on investment (Spanish equivalent of ROI)
 - **Temporada alta/baja**: High/low season periods
+
+## Language Guidelines
+- **CRITICAL**: NEVER use English financial acronyms like "ROI", "IRR", "NPV" in Spanish documents
+- ALWAYS use Spanish equivalents: "Rendimiento", "Retorno de Inversión", "TIR", "VPN"
+- Follow Mexican financial industry best practices and terminology
+- Technical/financial terms should use established Spanish translations used in Mexico
 5. Property management features (maintenance scheduling, cleaning coordination)
 6. Guest services integration (check-in/check-out, amenities, support)
 
@@ -144,7 +151,7 @@ Beyond basic fractional ownership + rental income, investigate:
 When building features, prioritize:
 1. Fair week distribution algorithm (the "Salomonic" division)
 2. Booking/reservation system with owner vs. third-party rental tracking
-3. Financial tracking and ROI calculation system
+3. Financial tracking and return calculation system (rendimiento)
 4. anguage: Spanish (UI/documents should support es-MX)
 
 ### Legal & Regulatory Framework
@@ -193,7 +200,7 @@ When building features, prioritize:
 - **Owners/Tickets** (4): Identity, contact, fiduciary right details, payment status
 - **Week Allocations** (52): Week number, dates, season, assigned owner, rotation year
 - **Reservations**: Type (owner/third-party), dates, guest info, check-in/out status
-- **Financial Records**: Weekly income, expenses, distributions, ROI calculations
+- **Financial Records**: Weekly income, expenses, distributions, return calculations (rendimiento)
 - **Seasonal Calendar**: Week classifications (Alta/Media/Baja), base rates, demand factors
 - **Property Manager**: Company info, contract terms, performance KPIs
 - **Maintenance Log**: Repairs, cleaning schedule, inspections, costs
@@ -224,7 +231,7 @@ When building features, prioritize:
 - Create 15-20 slide pitch deck
 - Develop interactive digital brochure with property renders
 - Produce virtual tour video
-- Design customizable ROI calculator for investor profiles
+- Design customizable return calculator (calculadora de rendimiento) for investor profiles
 - Prepare FAQ document
 - Draft template contracts (legal review)
 
@@ -286,6 +293,7 @@ When building features, prioritize:
 - Corporate partnership opportunities
 
 ## Avoid
-- Generic timeshare solutions (this has unique ROI distribution model)
+- Generic timeshare solutions (this has unique return distribution model)
 - Assuming US/European vacation patterns (use Mexican calendar)
 - Overlooking the mutual exclusivity of usage vs. income distribution
+- Using English financial acronyms (ROI, IRR, NPV) instead of Spanish terms (Rendimiento, TIR, VPN)
